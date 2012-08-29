@@ -1,5 +1,5 @@
 # System files
 *.DS_Store
 
-# Sass
-*.sass-cache
+# Python
+*.pyc

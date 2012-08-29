@@ -1,5 +1,4 @@
 include README.md
-recursive-include bootstrap/static/ *
-recursive-include bootstrap/templates/ *
-recursive-include skeleton/static/ *
-recursive-include skeleton/templates/ *
+recursive-include bootstrap/static/bootstrap/ *
+recursive-include skeleton/static/skeleton/ *
+recursive-include skeleton/templates/skeleton/ *
