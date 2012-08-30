@@ -2,18 +2,25 @@
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="{% block html_class %}no-js{% endblock html_class %}" lang="{% block html_lang %}en{% endblock html_lang %}"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>SKELETON</title>
-    <meta name="description" content="">
+    <title>{% block title %}{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/SKELETON.css">
-    <link rel="author" href="humans.txt">
-    <script src="static/js/modernizr/2.6.1/modernizr.min.js"></script>
+    <meta name="description" content="{% block meta_description %}{% endblock meta_description %}">
+    {% block head_css %}
+    {% block bootstrap_css %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}bootstrap/css/bootstrap-responsive.css">
+    {% endblock bootstrap_css %}
+    {% endblock head_css %}
+    {% block head_js %}
+    <script src="{{ STATIC_URL }}skeleton/js/modernizr/2.6.1/modernizr.min.js"></script>
+    {% endblock head_js %}
 </head>
-<body>
+<body id="{% block body_id %}{% endblock body_id %}" class="{% block body_class %}{% endblock body_class %}">
+    {% block body_content %}
     <header role="banner" id="banner">
         
     </header>
@@ -28,8 +35,75 @@
             <p>To ensure the best possible experience, please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a>.</p>
         </div>
     <![endif]-->
+    {% endblock body_content %}
+    {% block body_js %}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="static/js/jquery/1.8.0/jquery.min.js"><\/script>')</script>
-    <script src="static/js/SKELETON.js"></script>
+    <script>window.jQuery || document.write('<script src="{{ STATIC_URL }}skeleton/js/jquery/1.8.0/jquery.min.js"><\/script>')</script>
+    {% block bootstrap_js %}
+    {% block bootstrap_js_min %}
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap.min.js"></script>
+    {% endblock bootstrap_js_min %}
+    {% block bootstrap_js_full %}
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap.js"></script>
+    {% endblock bootstrap_js_full %}
+    {% block bootstrap_js_affix %}
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap-affix.js"></script>
+    {% endblock bootstrap_js_affix %}
+    {% block bootstrap_js_alert %}
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap-alert.js"></script>
+    {% endblock bootstrap_js_alert %}
+    {% block bootstrap_js_button %}
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap-button.js"></script>
+    {% endblock bootstrap_js_button %}
+    {% block bootstrap_js_carousel %}
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap-carousel.js"></script>
+    {% endblock bootstrap_js_carousel %}
+    {% block bootstrap_js_collapse %}
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap-collapse.js"></script>
+    {% endblock bootstrap_js_collapse %}
+    {% block bootstrap_js_dropdown %}
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap-dropdown.js"></script>
+    {% endblock bootstrap_js_dropdown %}
+    {% block bootstrap_js_modal %}
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap-modal.js"></script>
+    {% endblock bootstrap_js_modal %}
+    {% block bootstrap_js_popover %}
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap-popover.js"></script>
+    {% endblock bootstrap_js_popover %}
+    {% block bootstrap_js_scrollspy %}
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap-scrollspy.js"></script>
+    {% endblock bootstrap_js_scrollspy %}
+    {% block bootstrap_js_tab %}
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap-tab.js"></script>
+    {% endblock bootstrap_js_tab %}
+    {% block bootstrap_js_tooltip %}
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap-tooltip.js"></script>
+    {% endblock bootstrap_js_tooltip %}
+    {% block bootstrap_js_transition %}
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap-transition.js"></script>
+    {% endblock bootstrap_js_transition %}
+    {% block bootstrap_js_typehead %}
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap-typeahead.js"></script>
+    {% endblock bootstrap_js_typehead %}
+    {% endblock bootstrap_js %}
+    {% block ga %}
+    <script>
+        // Google Analtyics
+        var _gaq = [['_setAccount', '{% block ga_id %}UA-XXXXX-X{% endblock ga_id %}'], ['_trackPageview']];
+        (function(d, t) {
+          var g = d.createElement(t),
+              s = d.getElementsByTagName(t)[0];
+          g.src = '//www.google-analytics.com/ga.js';
+          s.parentNode.insertBefore(g, s);
+        }(document, 'script'));
+    </script>
+    {% endblock ga %}
+    {% block ios_fix %}
+    <script>
+        // iOS orientationchange zoom fix
+        (function(a){function m(){d.setAttribute("content",g),h=!0}function n(){d.setAttribute("content",f),h=!1}function o(b){l=b.accelerationIncludingGravity,i=Math.abs(l.x),j=Math.abs(l.y),k=Math.abs(l.z),(!a.orientation||a.orientation===180)&&(i>7||(k>6&&j<8||k<8&&j>6)&&i>5)?h&&n():h||m()}var b=navigator.userAgent;if(!(/iPhone|iPad|iPod/.test(navigator.platform)&&/OS [1-5]_[0-9_]* like Mac OS X/i.test(b)&&b.indexOf("AppleWebKit")>-1))return;var c=a.document;if(!c.querySelector)return;var d=c.querySelector("meta[name=viewport]"),e=d&&d.getAttribute("content"),f=e+",maximum-scale=1",g=e+",maximum-scale=10",h=!0,i,j,k,l;if(!d)return;a.addEventListener("orientationchange",m,!1),a.addEventListener("devicemotion",o,!1)})(this);
+    </script>
+    {% endblock ios_fix %}
+    {% endblock body_js %}
 </body>
 </html>
