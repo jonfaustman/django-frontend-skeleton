@@ -1,0 +1,9 @@
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert {% block alert_type %}%alert-info{% endblock alert_type %}">
+            <a class="close" data-dismiss="alert">×</a>
+            <h1 class="alert-heading">{{ message.tags }}</h1>
+            {{ message }}
+        </div><!-- /.alert -->
+    {% endfor %}
+{% endif %}
