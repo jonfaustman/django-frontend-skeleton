@@ -16,13 +16,11 @@ A collection of resources to have the perfect (for me) starting point for front-
 #### Markup and included files
 
 ## License
+MIT License
 
-### Major Components:
-* HTML5 Boilerplate: The Unlicense
+### Component Specific Licenses:
+* HTML5 Boilerplate: MIT License
 * Modernizr: BSD/MIT License
 * Twitter Bootstrap: Apache License, Version 2.0
 * jQuery: MIT/GPL License
 * iOS-Orientationchange-Fix: MIT/GPL v2.0 License
-
-### Personal Components:
-MIT License
