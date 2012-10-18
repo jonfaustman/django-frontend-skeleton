@@ -1,4 +1,4 @@
 include README.md
 recursive-include frontend/bootstrap/static/bootstrap/ *
-recursive-include frontend/h5bp/static/skeleton/ *
-recursive-include frontend/h5bp/templates/skeleton/ *
+recursive-include frontend/h5bp/static/h5bp/ *
+recursive-include frontend/h5bp/templates/h5bp/ *
