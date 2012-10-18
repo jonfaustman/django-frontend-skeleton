@@ -9,13 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{% block meta_description %}{% endblock meta_description %}">
     {% block head_css %}
-    {% block bootstrap_css %}
-    {% bootstrap_css %}
-    {% bootstrap_responsive_css %}
-    {% endblock bootstrap_css %}
+        {% block bootstrap_css %}
+            {% bootstrap_css %}
+            {% bootstrap_responsive_css %}
+        {% endblock bootstrap_css %}
     {% endblock head_css %}
     {% block head_js %}
-    {% h5bp_modernizr '2.6.2' %}
+        {% h5bp_modernizr '2.6.2' %}
     {% endblock head_js %}
 </head>
 <body id="{% block body_id %}{% endblock body_id %}" class="{% block body_class %}{% endblock body_class %}">
@@ -36,18 +36,18 @@
     <![endif]-->
     {% endblock body_content %}
     {% block body_js %}
-    {% h5bp_jquery '1.8.2' %}
-    {% block bootstrap_js %}
-    {% bootstrap_js all %}
-    {% endblock bootstrap_js %}
-    {% block ga %}
-    {% endblock ga %}
-    {% block ios_fix %}
-    <script>
-        // iOS orientationchange zoom fix
-        (function(a){function m(){d.setAttribute("content",g),h=!0}function n(){d.setAttribute("content",f),h=!1}function o(b){l=b.accelerationIncludingGravity,i=Math.abs(l.x),j=Math.abs(l.y),k=Math.abs(l.z),(!a.orientation||a.orientation===180)&&(i>7||(k>6&&j<8||k<8&&j>6)&&i>5)?h&&n():h||m()}var b=navigator.userAgent;if(!(/iPhone|iPad|iPod/.test(navigator.platform)&&/OS [1-5]_[0-9_]* like Mac OS X/i.test(b)&&b.indexOf("AppleWebKit")>-1))return;var c=a.document;if(!c.querySelector)return;var d=c.querySelector("meta[name=viewport]"),e=d&&d.getAttribute("content"),f=e+",maximum-scale=1",g=e+",maximum-scale=10",h=!0,i,j,k,l;if(!d)return;a.addEventListener("orientationchange",m,!1),a.addEventListener("devicemotion",o,!1)})(this);
-    </script>
-    {% endblock ios_fix %}
+        {% h5bp_jquery '1.8.2' %}
+        {% block bootstrap_js %}
+            {% bootstrap_js all %}
+        {% endblock bootstrap_js %}
+        {% block ga %}
+        {% endblock ga %}
+        {% block ios_fix %}
+        <script>
+            // iOS orientationchange zoom fix
+            (function(a){function m(){d.setAttribute("content",g),h=!0}function n(){d.setAttribute("content",f),h=!1}function o(b){l=b.accelerationIncludingGravity,i=Math.abs(l.x),j=Math.abs(l.y),k=Math.abs(l.z),(!a.orientation||a.orientation===180)&&(i>7||(k>6&&j<8||k<8&&j>6)&&i>5)?h&&n():h||m()}var b=navigator.userAgent;if(!(/iPhone|iPad|iPod/.test(navigator.platform)&&/OS [1-5]_[0-9_]* like Mac OS X/i.test(b)&&b.indexOf("AppleWebKit")>-1))return;var c=a.document;if(!c.querySelector)return;var d=c.querySelector("meta[name=viewport]"),e=d&&d.getAttribute("content"),f=e+",maximum-scale=1",g=e+",maximum-scale=10",h=!0,i,j,k,l;if(!d)return;a.addEventListener("orientationchange",m,!1),a.addEventListener("devicemotion",o,!1)})(this);
+        </script>
+        {% endblock ios_fix %}
     {% endblock body_js %}
 </body>
 </html>
