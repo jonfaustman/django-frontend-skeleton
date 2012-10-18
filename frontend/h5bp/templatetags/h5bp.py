@@ -5,7 +5,7 @@ register = template.Library()
 
 
 @register.simple_tag
-def skeleton_html(lang):
+def h5bp_html(lang):
     """ Returns HTML tag according to chosen language.
     """
     output=[
@@ -18,26 +18,26 @@ def skeleton_html(lang):
 
 
 @register.simple_tag
-def skeleton_modernizr(v):
+def h5bp_modernizr(v):
     """ Returns Modernizr JavaScript file according to version number.
     TEMPLATE_DEBUG returns full file, otherwise returns minified file.
     """
     if getattr(settings, 'TEMPLATE_DEBUG',):
-        return '<script src="%sskeleton/js/modernizr/%s/modernizr.js"></script>' % (settings.STATIC_URL, v)
+        return '<script src="%sh5bp/js/modernizr/%s/modernizr.js"></script>' % (settings.STATIC_URL, v)
     else:
-        return '<script src="%sskeleton/js/modernizr/%s/modernizr.min.js"></script>' % (settings.STATIC_URL, v)
+        return '<script src="%sh5bp/js/modernizr/%s/modernizr.min.js"></script>' % (settings.STATIC_URL, v)
 
 
 @register.simple_tag
-def skeleton_jquery(v):
+def h5bp_jquery(v):
     """ Returns jQuery JavaScript file according to version number.
     TEMPLATE_DEBUG returns full file, otherwise returns minified file from Google CDN with local fallback.
     """
     if getattr(settings, 'TEMPLATE_DEBUG',):
-        return '<script src="%sskeleton/js/jquery/%s/jquery.js"></script>' % (settings.STATIC_URL, v)
+        return '<script src="%sh5bp/js/jquery/%s/jquery.js"></script>' % (settings.STATIC_URL, v)
     else:
         output=[
             '<script src="//ajax.googleapis.com/ajax/libs/jquery/%s/jquery.min.js"></script>' % v,
-            '<script>window.jQuery || document.write(\'<script src="%sskeleton/js/jquery/%s/jquery.min.js"><\/script>\')</script>' % (settings.STATIC_URL, v)
+            '<script>window.jQuery || document.write(\'<script src="%sh5bp/js/jquery/%s/jquery.min.js"><\/script>\')</script>' % (settings.STATIC_URL, v)
         ]
         return '\n'.join(output)
