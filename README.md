@@ -25,4 +25,4 @@ A collection of resources to have the perfect (for me) starting point for front-
 * iOS-Orientationchange-Fix: MIT/GPL v2.0 License
 
 ### Personal Components:
-The Unlicense
+MIT License
