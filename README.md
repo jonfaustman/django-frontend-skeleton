@@ -22,9 +22,10 @@ Extend the HTML5 Boilerplate in your template(s) `{% extends 'h5bp.html' %}`
 #### Template tags
 Use the included template tags to suit your needs.
 
-`{% load h5bp %}`
+##### `{% load h5bp %}`
 
-* h5bp_html - Returns HTML tag according to chosen language - 'en' is the default.
+###### h5bp_html
+Returns HTML tag according to chosen language - 'en' is the default.
 
 ``` HTML
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
@@ -33,7 +34,8 @@ Use the included template tags to suit your needs.
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 ```
 
-* h5bp_modernizr - Returns Modernizr JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file. The latest '2.6.2' is the default and is included.
+###### h5bp_modernizr 
+Returns Modernizr JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file. The latest '2.6.2' is the default and is included.
 
 ``` HTML
 <script src="/static/js/h5bp/modernizr/2.6.2/modernizr.js"></script>
@@ -43,7 +45,8 @@ Use the included template tags to suit your needs.
 <script src="/static/js/h5bp/modernizr/2.6.2/modernizr.min.js"></script>
 ```
 
-* h5bp_jquery - Returns jQuery JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file from Google CDN with local fallback. The latest '1.8.2' is the default and is included.
+###### h5bp_jquery
+Returns jQuery JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file from Google CDN with local fallback. The latest '1.8.2' is the default and is included.
 
 ``` HTML
 <script src="/static/js/h5bp/jquery/1.8.2/jquery.js"></script>
@@ -56,7 +59,8 @@ Use the included template tags to suit your needs.
 
 `{% load bootstrap %}`
 
-* bootstrap_css - Returns Twitter Bootstrap CSS file. TEMPLATE_DEBUG returns full file, otherwise returns minified file.
+###### bootstrap_css
+Returns Twitter Bootstrap CSS file. TEMPLATE_DEBUG returns full file, otherwise returns minified file.
 
 ``` HTML
 <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.css">
@@ -66,8 +70,8 @@ Use the included template tags to suit your needs.
 <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css">
 ```
 
-* bootstrap_responsive_css
-
+###### bootstrap_responsive_css
+Returns Twitter Bootstrap responsive CSS file. TEMPLATE_DEBUG returns full file, otherwise returns minified file.
 ``` HTML
 <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-responsive.css">
 ```
@@ -76,20 +80,23 @@ Use the included template tags to suit your needs.
 <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-responsive.min.css">
 ```
 
-* bootstrap_js Returns Twitter Bootstrap (2.1.1) JavaScript file(s). all returns concatenated file; full file for LOCAL, minified otherwise. Other choice are (individual files are not minified):
-    * affix,
-    * alert,
-    * button,
-    * carousel,
-    * collapse,
-    * dropdown,
-    * modal,
-    * popover (adds tooltip if not included),
-    * scrollspy,
-    * tab,
-    * tooltip,
-    * transition,
-    * typehead.
+###### bootstrap_js
+Returns Twitter Bootstrap (2.1.1) JavaScript file(s). all returns concatenated file; full file for LOCAL, minified otherwise. Other choices include:
+    * affix
+    * alert
+    * button
+    * carousel
+    * collapse
+    * dropdown
+    * modal
+    * popover (adds tooltip if not included)
+    * scrollspy
+    * tab
+    * tooltip
+    * transition
+    * typehead
+
+Individual files are not minified.
 
 `{% boostrap_js all %}` would render
 ``` HTML
@@ -107,8 +114,7 @@ or
 <script src="/static/js/bootstrap/bootstrap-alert.js"></script>
 ```
 
-
-Should out to Ryan Brady's [Django Bootstrapped](https://github.com/rbrady/django-bootstrapped) for inspiration and initial code.
+Shout out to Ryan Brady and his [Django Bootstrapped](https://github.com/rbrady/django-bootstrapped) for inspiration and initial code.
 
 ## License
 MIT License
