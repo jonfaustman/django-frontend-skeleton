@@ -82,19 +82,19 @@ Returns Twitter Bootstrap responsive CSS file. TEMPLATE_DEBUG returns full file,
 
 ###### bootstrap_js
 Returns Twitter Bootstrap (2.1.1) JavaScript file(s). all returns concatenated file; full file for LOCAL, minified otherwise. Other choices include:
-    * affix
-    * alert
-    * button
-    * carousel
-    * collapse
-    * dropdown
-    * modal
-    * popover (adds tooltip if not included)
-    * scrollspy
-    * tab
-    * tooltip
-    * transition
-    * typehead
+* affix
+* alert
+* button
+* carousel
+* collapse
+* dropdown
+* modal
+* popover (adds tooltip if not included)
+* scrollspy
+* tab
+* tooltip
+* transition
+* typehead
 
 Individual files are not minified.
 
