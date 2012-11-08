@@ -34,6 +34,20 @@ Returns HTML tag according to chosen language - 'en' is the default.
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 ```
 
+###### h5bp_normalize
+Returns Normalize CSS file.
+
+``` HTML
+<link rel="stylesheet" href="/static/css/h5bp/normalize.css">
+```
+
+####### h5bp_css 
+Returns HTML5 Boilerplate CSS file.
+
+``` HTML
+<link rel="stylesheet" href="/static/css/h5bp/h5bp.css">
+```
+
 ###### h5bp_modernizr 
 Returns Modernizr JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file. The latest '2.6.2' is the default and is included.
 
