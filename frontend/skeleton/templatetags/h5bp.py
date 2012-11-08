@@ -18,6 +18,20 @@ def h5bp_html(lang):
 
 
 @register.simple_tag
+def h5bp_normalize():
+    """ Returns Normalize CSS file.
+    """
+    return '<link rel="stylesheet" href="%scss/h5bp/normalize.css">' % settings.STATIC_URL
+
+
+@register.simple_tag
+def h5bp_css():
+    """ Returns HTML5 Boilerplate CSS file.
+    """
+    return '<link rel="stylesheet" href="%scss/h5bp/h5bp.css">' % settings.STATIC_URL
+
+
+@register.simple_tag
 def h5bp_modernizr(v):
     """ Returns Modernizr JavaScript file according to version number.
     TEMPLATE_DEBUG returns full file, otherwise returns minified file.
@@ -41,3 +55,13 @@ def h5bp_jquery(v):
             '<script>window.jQuery || document.write(\'<script src="%sjs/h5bp/jquery/%s/jquery.min.js"><\/script>\')</script>' % (settings.STATIC_URL, v)
         ]
         return '\n'.join(output)
+
+
+@register.simple_tag
+def h5bp_ga(ua):
+    """ Returns Google Analytics asynchronous snippet.
+    """
+    if getattr(settings, 'TEMPLATE_DEBUG',):
+        return ''
+    else:
+        return '<script>var _gaq=[["_setAccount","%s"],["_trackPageview"]];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";s.parentNode.insertBefore(g,s)}(document,"script"));</script>' % ua

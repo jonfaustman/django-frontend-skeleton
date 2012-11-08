@@ -57,6 +57,13 @@ Returns jQuery JavaScript file according to version number. TEMPLATE_DEBUG retur
 <script>window.jQuery || document.write('<script src="/static/js/h5bp/jquery/1.8.2/jquery.min.js"><\/script>')</script>
 ```
 
+###### h5bp_ga_
+Returns Google Analytics asynchronous snippet if TEMPLATE_DEBUG is not set.
+
+``` HTML
+<script>var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";s.parentNode.insertBefore(g,s)}(document,"script"));</script>
+```
+
 `{% load bootstrap %}`
 
 ###### bootstrap_css
