@@ -17,7 +17,7 @@ Add `git+ssh://git@github.com/jonfaustman/django-front-end-skeleton.git@feature/
 Add `frontend.skeleton` to your installed apps.
 
 ### Extend
-Extend the HTML5 Boilerplate in your template(s) `{% extends 'h5bp.html' %}`
+Extend the skeleton's base template in your template(s) `{% extends 'skeleton/base.html' %}`
 
 #### Template tags
 Use the included template tags to suit your needs.
