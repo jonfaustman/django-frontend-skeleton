@@ -46,7 +46,6 @@ def do_bootstrap_js(parser, token):
         typehead.
     Individual files are not minified.
     """
-    print '\n'.join(token.split_contents())
     return BootstrapJSNode(token.split_contents()[1:])
 
 
