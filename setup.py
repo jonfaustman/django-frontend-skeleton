@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 version = '0.1.0'
 
-setup(name='django-front-end-skeleton',
+setup(name='django-frontend-skeleton',
       version=version,
       description="A basic Django template skeleton built on HTML5 Boilerplate and Twitter Bootstrap.",
       long_description=open("README.md", "r").read(),
