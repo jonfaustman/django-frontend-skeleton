@@ -5,11 +5,13 @@
 {% h5bp_html 'en' %}
 {% endblock html %}
 <head>
+    {% block meta %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{% block title %}{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{% block meta_description %}{% endblock meta_description %}">
+    {% endblock meta %}
     {% block head_css %}
         {% block h5bp_css %}
         {% endblock h5bp_css %}
