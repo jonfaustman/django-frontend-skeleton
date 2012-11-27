@@ -4,7 +4,7 @@ version = '0.1.0'
 
 setup(name='django-front-end-skeleton',
       version=version,
-      description="A Collection of Bootstrap static files.",
+      description="A basic Django template skeleton built on HTML5 Boilerplate and Twitter Bootstrap.",
       long_description=open("README.md", "r").read(),
       classifiers=[
           "Development Status :: 5 - Production/Stable",
@@ -21,7 +21,7 @@ setup(name='django-front-end-skeleton',
       keywords='',
       author='Jon Faustman',
       author_email='jon.faustman@gmail.com',
-      url='http://github.com/jonfaustman/django-front-end-skeleton',
+      url='http://github.com/jonfaustman/django-frontend-skeleton',
       license='MIT',
       packages=find_packages(),
       install_requires = [],

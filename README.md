@@ -12,7 +12,7 @@ A basic Django template skeleton built on HTML5 Boilerplate and Twitter Bootstra
 ## Getting Started
 
 ### Install
-Add `git+ssh://git@github.com/jonfaustman/django-front-end-skeleton.git@feature/streamline` to your requirements file.
+Add `pip install django-frontend-skeleton` to your requirements file.
 
 Add `frontend.skeleton` to your installed apps.
 
@@ -71,7 +71,7 @@ Returns jQuery JavaScript file according to version number. TEMPLATE_DEBUG retur
 <script>window.jQuery || document.write('<script src="/static/js/h5bp/jquery/1.8.2/jquery.min.js"><\/script>')</script>
 ```
 
-###### h5bp_ga_
+###### h5bp_ga
 Returns Google Analytics asynchronous snippet if TEMPLATE_DEBUG is not set.
 
 ``` HTML
