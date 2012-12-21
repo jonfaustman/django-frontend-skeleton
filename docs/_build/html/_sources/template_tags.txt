@@ -52,14 +52,14 @@ h5bp_jquery
 Returns jQuery JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file from Google CDN with local fallback. The latest '1.8.2' is the default and is included.
 ::
 
-    <script src="/static/js/h5bp/jquery/1.8.2/jquery.js"></script>
+    <script src="/static/js/h5bp/jquery/1.8.3/jquery.js"></script>
 
 Or
 
 ::
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/static/js/h5bp/jquery/1.8.2/jquery.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/js/h5bp/jquery/1.8.3/jquery.min.js"><\/script>')</script>
 
 h5bp_ga
 ~~~~~~~~
