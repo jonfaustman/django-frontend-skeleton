@@ -5,7 +5,7 @@ version = '0.1.0'
 setup(name='django-frontend-skeleton',
       version=version,
       description="A basic Django template skeleton built on HTML5 Boilerplate and Twitter Bootstrap.",
-      long_description=open("README.md", "r").read(),
+      long_description=open("README.rst", "r").read(),
       classifiers=[
           "Development Status :: 5 - Production/Stable",
           "Environment :: Web Environment",
