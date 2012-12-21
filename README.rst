@@ -69,6 +69,7 @@ Returns Modernizr JavaScript file according to version number. TEMPLATE_DEBUG re
     <script src="/static/js/h5bp/modernizr/2.6.2/modernizr.js"></script>
 
 Or
+
 ::
 
     <script src="/static/js/h5bp/modernizr/2.6.2/modernizr.min.js"></script>
@@ -81,6 +82,7 @@ Returns jQuery JavaScript file according to version number. TEMPLATE_DEBUG retur
     <script src="/static/js/h5bp/jquery/1.8.2/jquery.js"></script>
 
 Or
+
 ::
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -105,6 +107,7 @@ Returns Twitter Bootstrap CSS file. TEMPLATE_DEBUG returns full file, otherwise 
     <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.css">
 
 Or
+
 ::
 
     <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css">
@@ -117,6 +120,7 @@ Returns Twitter Bootstrap responsive CSS file. TEMPLATE_DEBUG returns full file,
     <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-responsive.css">
 
 Or
+
 ::
 
     <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-responsive.min.css">
@@ -147,6 +151,7 @@ Individual files are not minified.
     <script src="/static/js/bootstrap/bootstrap.js"></script>
 
 Or
+
 ::
 
     <script src="/static/js/bootstrap/bootstrap.min.js"></script>
