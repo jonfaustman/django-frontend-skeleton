@@ -141,7 +141,7 @@ Returns Twitter Bootstrap (2.2.1) JavaScript file(s). all returns concatenated f
 * tab
 * tooltip
 * transition
-* typehead
+* typeahead
 
 Individual files are not minified.
 

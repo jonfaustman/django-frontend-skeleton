@@ -43,7 +43,7 @@ def do_bootstrap_js(parser, token):
         tab,
         tooltip,
         transition,
-        typehead.
+        typeahead.
     Individual files are not minified.
     """
     return BootstrapJSNode(token.split_contents()[1:])
