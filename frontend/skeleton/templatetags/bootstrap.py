@@ -10,9 +10,9 @@ def bootstrap_css():
     TEMPLATE_DEBUG returns full file, otherwise returns minified file.
     """
     if getattr(settings, 'TEMPLATE_DEBUG',):
-        return '<link rel="stylesheet" href="%scss/bootstrap/bootstrap.css">' % settings.STATIC_URL
+        return '<link rel="stylesheet" href="%sskeleton/css/bootstrap/bootstrap.css">' % settings.STATIC_URL
     else:
-        return '<link rel="stylesheet" href="%scss/bootstrap/bootstrap.min.css">' % settings.STATIC_URL
+        return '<link rel="stylesheet" href="%sskeleton/css/bootstrap/bootstrap.min.css">' % settings.STATIC_URL
 
 
 @register.simple_tag
@@ -21,9 +21,9 @@ def bootstrap_responsive_css():
     TEMPLATE_DEBUG returns full file, otherwise returns minified file.
     """
     if getattr(settings, 'TEMPLATE_DEBUG',):
-        return '<link rel="stylesheet" href="%scss/bootstrap/bootstrap-responsive.css">' % settings.STATIC_URL
+        return '<link rel="stylesheet" href="%sskeleton/css/bootstrap/bootstrap-responsive.css">' % settings.STATIC_URL
     else:
-        return '<link rel="stylesheet" href="%scss/bootstrap/bootstrap-responsive.min.css">' % settings.STATIC_URL
+        return '<link rel="stylesheet" href="%sskeleton/css/bootstrap/bootstrap-responsive.min.css">' % settings.STATIC_URL
 
 
 @register.tag(name='bootstrap_js')
@@ -49,7 +49,7 @@ def do_bootstrap_js(parser, token):
     return BootstrapJSNode(token.split_contents()[1:])
 
 
-SCRIPT_TAG = '<script src="%sjs/bootstrap/bootstrap-%s.js"></script>'
+SCRIPT_TAG = '<script src="%sskeleton/js/bootstrap/bootstrap-%s.js"></script>'
 
 class BootstrapJSNode(template.Node):
 
@@ -59,9 +59,9 @@ class BootstrapJSNode(template.Node):
     def render(self, context):
         if 'all' in self.args:
             if getattr(settings, 'TEMPLATE_DEBUG', ):
-                return '<script src="%sjs/bootstrap/bootstrap.js"></script>' % settings.STATIC_URL
+                return '<script src="%sskeleton/js/bootstrap/bootstrap.js"></script>' % settings.STATIC_URL
             else:
-                return '<script src="%sjs/bootstrap/bootstrap.min.js"></script>' % settings.STATIC_URL
+                return '<script src="%sskeleton/js/bootstrap/bootstrap.min.js"></script>' % settings.STATIC_URL
         else:
             # popover requires tooltip
             if 'popover' in self.args:

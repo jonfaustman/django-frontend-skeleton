@@ -21,14 +21,14 @@ def h5bp_html(lang):
 def h5bp_normalize():
     """ Returns Normalize CSS file.
     """
-    return '<link rel="stylesheet" href="%scss/h5bp/normalize.css">' % settings.STATIC_URL
+    return '<link rel="stylesheet" href="%sskeleton/css/h5bp/normalize.css">' % settings.STATIC_URL
 
 
 @register.simple_tag
 def h5bp_css():
     """ Returns HTML5 Boilerplate CSS file.
     """
-    return '<link rel="stylesheet" href="%scss/h5bp/h5bp.css">' % settings.STATIC_URL
+    return '<link rel="stylesheet" href="%sskeleton/css/h5bp/h5bp.css">' % settings.STATIC_URL
 
 
 @register.simple_tag
@@ -37,9 +37,9 @@ def h5bp_modernizr(v):
     TEMPLATE_DEBUG returns full file, otherwise returns minified file.
     """
     if getattr(settings, 'TEMPLATE_DEBUG',):
-        return '<script src="%sjs/h5bp/modernizr/%s/modernizr.js"></script>' % (settings.STATIC_URL, v)
+        return '<script src="%sskeleton/js/h5bp/modernizr/%smodernizr.js"></script>' % (settings.STATIC_URL, v)
     else:
-        return '<script src="%sjs/h5bp/modernizr/%s/modernizr.min.js"></script>' % (settings.STATIC_URL, v)
+        return '<script src="%sskeleton/js/h5bp/modernizr/%smodernizr.min.js"></script>' % (settings.STATIC_URL, v)
 
 
 @register.simple_tag
@@ -48,11 +48,11 @@ def h5bp_jquery(v):
     TEMPLATE_DEBUG returns full file, otherwise returns minified file from Google CDN with local fallback.
     """
     if getattr(settings, 'TEMPLATE_DEBUG',):
-        return '<script src="%sjs/h5bp/jquery/%s/jquery.js"></script>' % (settings.STATIC_URL, v)
+        return '<script src="%sskeleton/js/h5bp/jquery/%sjquery.js"></script>' % (settings.STATIC_URL, v)
     else:
         output=[
-            '<script src="//ajax.googleapis.com/ajax/libs/jquery/%s/jquery.min.js"></script>' % v,
-            '<script>window.jQuery || document.write(\'<script src="%sjs/h5bp/jquery/%s/jquery.min.js"><\/script>\')</script>' % (settings.STATIC_URL, v)
+            '<script src="//ajax.googleapis.com/ajax/libs/jquery/%sjquery.min.js"></script>' % v,
+            '<script>window.jQuery || document.write(\'<script src="%sskeleton/js/h5bp/jquery/%sjquery.min.js"><\/script>\')</script>' % (settings.STATIC_URL, v)
         ]
         return '\n'.join(output)
 
