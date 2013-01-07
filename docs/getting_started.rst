@@ -4,7 +4,7 @@ Getting Started
 Install
 --------
 1. install `django-frontend-skeleton` (pip install, add to your requirements files, etc.)
-2. add `'django-frontend-skeleton'` to your INSTALLED_APPS
+2. add `'frontend.skeleton'` to your INSTALLED_APPS
 
 Extend
 -------
