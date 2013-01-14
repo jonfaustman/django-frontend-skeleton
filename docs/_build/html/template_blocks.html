@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Template blocks &mdash; django-frontend-skeleton 0.3.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.3.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="django-frontend-skeleton 0.3.0 documentation" href="index.html" />
+    <link rel="next" title="License" href="license.html" />
+    <link rel="prev" title="Template tags" href="template_tags.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="license.html" title="License"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="template_tags.html" title="Template tags"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">django-frontend-skeleton 0.3.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="template-blocks">
+<h1>Template blocks<a class="headerlink" href="#template-blocks" title="Permalink to this headline">¶</a></h1>
+<p>Use the included template blocks to suit your needs</p>
+<p>Some blocks are specific to HTML5 Boilerplate or Twitter Bootstrap, while most are simply useful for template extension.</p>
+<div class="section" id="html">
+<h2>html<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h2>
+<p>Override the HTML doctype, or use in conjunction with {% h5bp_html &#8216;&#8217; %} to change the HTML lang attribute.</p>
+</div>
+<div class="section" id="meta">
+<h2>meta<a class="headerlink" href="#meta" title="Permalink to this headline">¶</a></h2>
+<p>Override or extend meta tags and the title tag.</p>
+<div class="section" id="title">
+<h3>title<a class="headerlink" href="#title" title="Permalink to this headline">¶</a></h3>
+<p>Add your application specific title to the title tag.</p>
+</div>
+<div class="section" id="meta-description">
+<h3>meta_description<a class="headerlink" href="#meta-description" title="Permalink to this headline">¶</a></h3>
+<p>Add your application specific information to the meta description.</p>
+</div>
+</div>
+<div class="section" id="head-css">
+<h2>head_css<a class="headerlink" href="#head-css" title="Permalink to this headline">¶</a></h2>
+<p>Parent CSS block to override or extend the included CSS files.</p>
+<div class="section" id="h5bp-css">
+<h3>h5bp_css<a class="headerlink" href="#h5bp-css" title="Permalink to this headline">¶</a></h3>
+<p>Block to include {% h5bp_normalize %} and/or {% h5bp_css %}.</p>
+</div>
+<div class="section" id="bootstrap-css">
+<h3>bootstrap_css<a class="headerlink" href="#bootstrap-css" title="Permalink to this headline">¶</a></h3>
+<p>Block to override the included Twitter Bootstrap CSS and responsive CSS files.</p>
+</div>
+</div>
+<div class="section" id="head-js">
+<h2>head_js<a class="headerlink" href="#head-js" title="Permalink to this headline">¶</a></h2>
+<p>Override the included {% h5bp_modernizr &#8216;2.6.2&#8217; %} or extend with JavaScript files that need to loaded in the head.</p>
+</div>
+<div class="section" id="body-id">
+<h2>body_id<a class="headerlink" href="#body-id" title="Permalink to this headline">¶</a></h2>
+<p>Add an id to the body if needed.</p>
+</div>
+<div class="section" id="body-class">
+<h2>body_class<a class="headerlink" href="#body-class" title="Permalink to this headline">¶</a></h2>
+<p>Add class(es) to the body if needed.</p>
+</div>
+<div class="section" id="body-content">
+<h2>body_content<a class="headerlink" href="#body-content" title="Permalink to this headline">¶</a></h2>
+<p>Override the Internet Explorer warning, and/or extend with the main content from your application.</p>
+</div>
+<div class="section" id="body-js">
+<h2>body_js<a class="headerlink" href="#body-js" title="Permalink to this headline">¶</a></h2>
+<p>Override or extend the included JavaScript files with any file that does not need to be loaded in the head.</p>
+<div class="section" id="h5bp-jquery">
+<h3>h5bp_jquery<a class="headerlink" href="#h5bp-jquery" title="Permalink to this headline">¶</a></h3>
+<p>Override the included {% h5bp_jquery &#8216;1.8.3&#8217; %}.</p>
+</div>
+<div class="section" id="bootstrap-js">
+<h3>bootstrap_js<a class="headerlink" href="#bootstrap-js" title="Permalink to this headline">¶</a></h3>
+<p>Override the included {% bootstrap_js &#8216;all&#8217; %}.</p>
+</div>
+<div class="section" id="h5bp-ga">
+<h3>h5bp_ga<a class="headerlink" href="#h5bp-ga" title="Permalink to this headline">¶</a></h3>
+<p>Block to use {% h5bp_ga &#8216;&#8217; %} to include Google Analytics.</p>
+</div>
+<div class="section" id="ios-fix">
+<h3>ios_fix<a class="headerlink" href="#ios-fix" title="Permalink to this headline">¶</a></h3>
+<p>Override the included iOS-Orientationchange-Fix.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Template blocks</a><ul>
+<li><a class="reference internal" href="#html">html</a></li>
+<li><a class="reference internal" href="#meta">meta</a><ul>
+<li><a class="reference internal" href="#title">title</a></li>
+<li><a class="reference internal" href="#meta-description">meta_description</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#head-css">head_css</a><ul>
+<li><a class="reference internal" href="#h5bp-css">h5bp_css</a></li>
+<li><a class="reference internal" href="#bootstrap-css">bootstrap_css</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#head-js">head_js</a></li>
+<li><a class="reference internal" href="#body-id">body_id</a></li>
+<li><a class="reference internal" href="#body-class">body_class</a></li>
+<li><a class="reference internal" href="#body-content">body_content</a></li>
+<li><a class="reference internal" href="#body-js">body_js</a><ul>
+<li><a class="reference internal" href="#h5bp-jquery">h5bp_jquery</a></li>
+<li><a class="reference internal" href="#bootstrap-js">bootstrap_js</a></li>
+<li><a class="reference internal" href="#h5bp-ga">h5bp_ga</a></li>
+<li><a class="reference internal" href="#ios-fix">ios_fix</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="template_tags.html"
+                        title="previous chapter">Template tags</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="license.html"
+                        title="next chapter">License</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/template_blocks.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="license.html" title="License"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="template_tags.html" title="Template tags"
+             >previous</a> |</li>
+        <li><a href="index.html">django-frontend-skeleton 0.3.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Jon Faustman.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

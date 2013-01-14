@@ -28,4 +28,5 @@ Contents
    
    getting_started
    template_tags
+   template_blocks
    license

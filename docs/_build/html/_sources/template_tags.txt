@@ -25,41 +25,41 @@ h5bp_normalize
 Returns Normalize CSS file.
 ::
 
-    <link rel="stylesheet" href="/static/css/h5bp/normalize.css">
+    <link rel="stylesheet" href="/static/skeleton/css/h5bp/normalize.css">
 
 h5bp_css
 ~~~~~~~~~
 Returns HTML5 Boilerplate CSS file.
 ::
 
-    <link rel="stylesheet" href="/static/css/h5bp/h5bp.css">
+    <link rel="stylesheet" href="/static/skeleton/css/h5bp/h5bp.css">
 
 h5bp_modernizr
 ~~~~~~~~~~~~~~~
 Returns Modernizr JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file. The latest '2.6.2' is the default and is included.
 ::
 
-    <script src="/static/js/h5bp/modernizr/2.6.2/modernizr.js"></script>
+    <script src="/static/skeleton/js/h5bp/modernizr/2.6.2/modernizr.js"></script>
 
 Or
 
 ::
 
-    <script src="/static/js/h5bp/modernizr/2.6.2/modernizr.min.js"></script>
+    <script src="/static/skeleton/js/h5bp/modernizr/2.6.2/modernizr.min.js"></script>
 
 h5bp_jquery
 ~~~~~~~~~~~~
-Returns jQuery JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file from Google CDN with local fallback. The latest '1.8.2' is the default and is included.
+Returns jQuery JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file from Google CDN with local fallback. The latest '1.8.3' is the default and is included.
 ::
 
-    <script src="/static/js/h5bp/jquery/1.8.3/jquery.js"></script>
+    <script src="/static/skeleton/js/h5bp/jquery/1.8.3/jquery.js"></script>
 
 Or
 
 ::
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/static/js/h5bp/jquery/1.8.3/jquery.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="/static/skeleton/js/h5bp/jquery/1.8.3/jquery.min.js"><\/script>')</script>
 
 h5bp_ga
 ~~~~~~~~
@@ -79,26 +79,26 @@ bootstrap_css
 Returns Twitter Bootstrap CSS file. TEMPLATE_DEBUG returns full file, otherwise returns minified file.
 ::
 
-    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="/static/skeleton/css/bootstrap/bootstrap.css">
 
 Or
 
 ::
 
-    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/skeleton/css/bootstrap/bootstrap.min.css">
 
 bootstrap_responsive_css
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 Returns Twitter Bootstrap responsive CSS file. TEMPLATE_DEBUG returns full file, otherwise returns minified file.
 ::
 
-    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-responsive.css">
+    <link rel="stylesheet" href="/static/skeleton/css/bootstrap/bootstrap-responsive.css">
 
 Or
 
 ::
 
-    <link rel="stylesheet" href="/static/css/bootstrap/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/static/skeleton/css/bootstrap/bootstrap-responsive.min.css">
 
 bootstrap_js
 ~~~~~~~~~~~~~
@@ -123,18 +123,18 @@ Individual files are not minified.
 {% boostrap_js all %} would render
 ::
 
-    <script src="/static/js/bootstrap/bootstrap.js"></script>
+    <script src="/static/skeleton/js/bootstrap/bootstrap.js"></script>
 
 Or
 
 ::
 
-    <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+    <script src="/static/skeleton/js/bootstrap/bootstrap.min.js"></script>
 
 {% bootstrap_js alert affix %} would render
 ::
 
-    <script src="/static/js/bootstrap/bootstrap-affix.js"></script>
-    <script src="/static/js/bootstrap/bootstrap-alert.js"></script>
+    <script src="/static/skeleton/js/bootstrap/bootstrap-affix.js"></script>
+    <script src="/static/skeleton/js/bootstrap/bootstrap-alert.js"></script>
 
 Shout out to Ryan Brady and his `Django Bootstrapped <https://github.com/rbrady/django-bootstrapped>`_ for inspiration and initial code.
