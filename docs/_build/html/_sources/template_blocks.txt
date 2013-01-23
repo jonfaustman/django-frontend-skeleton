@@ -54,7 +54,7 @@ Override or extend the included JavaScript files with any file that does not nee
 
 h5bp_jquery
 ~~~~~~~~~~~~
-Override the included {% h5bp_jquery '1.8.3' %}.
+Override the included {% h5bp_jquery '1.9.0' %}.
 
 bootstrap_js
 ~~~~~~~~~~~~~~

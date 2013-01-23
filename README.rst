@@ -9,8 +9,14 @@ With the convenience of an installable Django application, create custom templat
 ---------
 Starring
 ---------
-* `HTML5 Boilerplate <https://github.com/h5bp/html5-boilerplate>`_
+* `HTML5 Boilerplate (based on 4.1.0) <https://github.com/h5bp/html5-boilerplate>`_
 * `Modernizr (2.6.2) <https://github.com/Modernizr/Modernizr>`_
 * `jQuery (1.9.0) <https://github.com/jquery/jquery>`_
 * `Twitter Bootstrap (2.2.2) <https://github.com/twitter/bootstrap>`_
 * `iOS-Orientationchange-Fix <https://github.com/scottjehl/iOS-Orientationchange-Fix>`_
+
+-----------------
+More Information
+-----------------
+
+For more information, instructions on how to get started, and changes in the current version `read the documentation <https://django-frontend-skeleton.readthedocs.org/>`_.
