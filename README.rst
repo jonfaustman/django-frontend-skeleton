@@ -11,6 +11,6 @@ Starring
 ---------
 * `HTML5 Boilerplate <https://github.com/h5bp/html5-boilerplate>`_
 * `Modernizr (2.6.2) <https://github.com/Modernizr/Modernizr>`_
-* `jQuery (1.8.3) <https://github.com/jquery/jquery>`_
+* `jQuery (1.9.0) <https://github.com/jquery/jquery>`_
 * `Twitter Bootstrap (2.2.2) <https://github.com/twitter/bootstrap>`_
 * `iOS-Orientationchange-Fix <https://github.com/scottjehl/iOS-Orientationchange-Fix>`_
