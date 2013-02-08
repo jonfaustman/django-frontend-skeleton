@@ -4,7 +4,6 @@ Changelog
 0.5.0
 ------
 * Update to jQuery 1.9.1 (HTML5 Boilerplate)
-* Note: As of the update, 1.9.1 was not on Google's hosted CDN and will fallback to local until it's added.
 * Update to Twitter Bootstrap 2.3.0 (Twitter Bootstrap)
 
 0.4.0
