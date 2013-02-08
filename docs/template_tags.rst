@@ -49,17 +49,17 @@ Or
 
 h5bp_jquery
 ~~~~~~~~~~~~
-Returns jQuery JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file from Google CDN with local fallback. The latest '1.9.0' is the default and is included.
+Returns jQuery JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file from Google CDN with local fallback. The latest '1.9.1' is the default and is included.
 ::
 
-    <script src="/static/skeleton/js/h5bp/jquery/1.9.0/jquery.js"></script>
+    <script src="/static/skeleton/js/h5bp/jquery/1.9.1/jquery.js"></script>
 
 Or
 
 ::
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/static/skeleton/js/h5bp/jquery/1.9.0/jquery.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/skeleton/js/h5bp/jquery/1.9.1/jquery.min.js"><\/script>')</script>
 
 h5bp_ga
 ~~~~~~~~
@@ -102,7 +102,7 @@ Or
 
 bootstrap_js
 ~~~~~~~~~~~~~
-Returns Twitter Bootstrap (2.2.2) JavaScript file(s). all returns concatenated file; full file for TEMPLATE_DEBUG, minified otherwise. Other choices include:
+Returns Twitter Bootstrap (2.3.0) JavaScript file(s). all returns concatenated file; full file for TEMPLATE_DEBUG, minified otherwise. Other choices include:
 
 * affix
 * alert

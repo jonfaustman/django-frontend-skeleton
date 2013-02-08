@@ -28,7 +28,7 @@ def bootstrap_responsive_css():
 
 @register.tag(name='bootstrap_js')
 def do_bootstrap_js(parser, token):
-    """ Returns Twitter Bootstrap (2.2.2) JavaScript file(s).
+    """ Returns Twitter Bootstrap (2.3.0) JavaScript file(s).
     all returns concatenated file; full file for TEMPLATE_DEBUG, minified otherwise.
     Other choice are:
         affix,
