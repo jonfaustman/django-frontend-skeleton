@@ -5,18 +5,6 @@ register = template.Library()
 
 
 @register.simple_tag
-def skeleton_css(file):
-    """ Returns CSS file using extension-less file name.
-    TEMPLATE_DEBUG returns full file, otherwise returns minified file.
-    However, does NOT generate minified file. 
-    """
-    if getattr(settings, 'TEMPLATE_DEBUG',):
-        return '<link rel="stylesheet" href="%scss/%s.css">' % (settings.STATIC_URL, file)
-    else:
-        return '<link rel="stylesheet" href="%scss/%s.min.css">' % (settings.STATIC_URL, file)
-
-
-@register.simple_tag
 def skeleton_ios_fix():
     """ Returns the iOS-Orientationchange-Fix.
     """
