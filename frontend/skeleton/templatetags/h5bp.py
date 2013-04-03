@@ -60,8 +60,16 @@ def h5bp_jquery(v):
 @register.simple_tag
 def h5bp_ga(ua):
     """ Returns Google Analytics asynchronous snippet.
+    Use H5BP_GA_SETDOMAINNAME to set domain for multiple, or cross-domain tracking.
+    Set H5BP_GA_SETALLOWLINKER to use _setAllowLinker method on target site for cross-domain tracking.
     """
     if getattr(settings, 'TEMPLATE_DEBUG',):
         return ''
     else:
-        return '<script>var _gaq=[["_setAccount","%s"],["_trackPageview"]];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";s.parentNode.insertBefore(g,s)}(document,"script"));</script>' % ua
+        if hasattr(settings, 'H5BP_GA_SETDOMAINNAME',):
+            if hasattr(settings, 'H5BP_GA_SETALLOWLINKER',):
+                return '<script>var _gaq=[["_setAccount","%s"],["_setDomainName","%s"],["_setAllowLinker", true],["_trackPageview"]];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";s.parentNode.insertBefore(g,s)}(document,"script"));</script>' % (ua, settings.H5BP_GA_SETDOMAINNAME)
+            else:
+                return '<script>var _gaq=[["_setAccount","%s"],["_setDomainName","%s"],["_trackPageview"]];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";s.parentNode.insertBefore(g,s)}(document,"script"));</script>' % (ua, settings.H5BP_GA_SETDOMAINNAME)
+        else:
+            return '<script>var _gaq=[["_setAccount","%s"],["_trackPageview"]];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";s.parentNode.insertBefore(g,s)}(document,"script"));</script>' % ua
