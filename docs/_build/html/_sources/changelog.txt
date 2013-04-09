@@ -1,6 +1,15 @@
 Changelog
 ==============
 
+0.6.0
+-----
+* Update Normalize.css to 1.1.1 (HTML5 Boilerplate)
+* Update to Twitter Bootstrap 2.3.1 (Twitter Bootstrap)
+* Added H5BP_GA_SETDOMAINNAME and H5BP_GA_SETALLOWLINKER for optional Google Analytics customization (HTML5 Boilerplate)
+* iOS-Orientationchange-Fix moved out of base.html
+* iOS-Orientationchange-Fix now {% skeleton_ios_fix %}
+* Created 'skeleton' template tag library
+
 0.5.0
 ------
 * Update to jQuery 1.9.1 (HTML5 Boilerplate)

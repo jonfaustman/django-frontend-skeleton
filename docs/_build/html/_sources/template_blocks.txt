@@ -66,4 +66,4 @@ Block to use {% h5bp_ga '' %} to include Google Analytics.
 
 ios_fix
 ~~~~~~~~
-Override the included iOS-Orientationchange-Fix.
+Block to use {% skeleton_ios_fix %} if iOS-Orientationchange-Fix is required. Deprecation warning: this block may be removed in future versions.

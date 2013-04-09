@@ -9,7 +9,7 @@ With the convenience of an installable Django application, create custom templat
 ---------
 Starring
 ---------
-* `HTML5 Boilerplate (based on 4.1.0) <https://github.com/h5bp/html5-boilerplate>`_
+* `HTML5 Boilerplate (based on 4.2.0) <https://github.com/h5bp/html5-boilerplate>`_
 * `Modernizr (2.6.2) <https://github.com/Modernizr/Modernizr>`_
 * `jQuery (1.9.1) <https://github.com/jquery/jquery>`_
 * `Twitter Bootstrap (2.3.1) <https://github.com/twitter/bootstrap>`_
