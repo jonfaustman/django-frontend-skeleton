@@ -3,6 +3,7 @@ Changelog
 
 0.6.0
 -----
+* Remove Google Analytics protocol check (HTML5 Boilerplate)
 * Update Normalize.css to 1.1.1 (HTML5 Boilerplate)
 * Update to Twitter Bootstrap 2.3.1 (Twitter Bootstrap)
 * Added H5BP_GA_SETDOMAINNAME and H5BP_GA_SETALLOWLINKER for optional Google Analytics customization (HTML5 Boilerplate)
