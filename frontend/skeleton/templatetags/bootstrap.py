@@ -61,10 +61,16 @@ class BootstrapJSNode(template.Node):
             if getattr(settings, 'TEMPLATE_DEBUG', ):
                 return '<script src="%sskeleton/js/bootstrap/bootstrap.js"></script>' % settings.STATIC_URL
             else:
-                return '<script src="%sskeleton/js/bootstrap/bootstrap.min.js"></script>' % settings.STATIC_URL
+                if hasattr(settings, 'SKELETON_STATIC_URL'):
+                    return '<script src="%sskeleton/js/bootstrap/bootstrap.min.js"></script>' % settings.SKELETON_STATIC_URL
+                else:
+                    return '<script src="%sskeleton/js/bootstrap/bootstrap.min.js"></script>' % settings.STATIC_URL
         else:
             # popover requires tooltip
             if 'popover' in self.args:
                 self.args.add('tooltip')
-            tags = [SCRIPT_TAG % (settings.STATIC_URL, tag) for tag in self.args]
+            if hasattr(settings, 'SKELETON_STATIC_URL'):
+                tags = [SCRIPT_TAG % (settings.SKELETON_STATIC_URL, tag) for tag in self.args]
+            else:
+                tags = [SCRIPT_TAG % (settings.STATIC_URL, tag) for tag in self.args]
             return '\n'.join(tags)

@@ -39,7 +39,10 @@ def h5bp_modernizr(v):
     if getattr(settings, 'TEMPLATE_DEBUG',):
         return '<script src="%sskeleton/js/h5bp/modernizr/%s/modernizr.js"></script>' % (settings.STATIC_URL, v)
     else:
-        return '<script src="%sskeleton/js/h5bp/modernizr/%s/modernizr.min.js"></script>' % (settings.STATIC_URL, v)
+        if hasattr(settings, 'SKELETON_STATIC_URL'):
+            return '<script src="%sskeleton/js/h5bp/modernizr/%s/modernizr.min.js"></script>' % (settings.SKELETON_STATIC_URL, v)
+        else:
+            return '<script src="%sskeleton/js/h5bp/modernizr/%s/modernizr.min.js"></script>' % (settings.STATIC_URL, v)
 
 
 @register.simple_tag
@@ -50,10 +53,16 @@ def h5bp_jquery(v):
     if getattr(settings, 'TEMPLATE_DEBUG',):
         return '<script src="%sskeleton/js/h5bp/jquery/%s/jquery.js"></script>' % (settings.STATIC_URL, v)
     else:
-        output=[
-            '<script src="//ajax.googleapis.com/ajax/libs/jquery/%s/jquery.min.js"></script>' % v,
-            '<script>window.jQuery || document.write(\'<script src="%sskeleton/js/h5bp/jquery/%s/jquery.min.js"><\/script>\')</script>' % (settings.STATIC_URL, v)
-        ]
+        if hasattr(settings, 'SKELETON_STATIC_URL'):
+            output=[
+                '<script src="//ajax.googleapis.com/ajax/libs/jquery/%s/jquery.min.js"></script>' % v,
+                '<script>window.jQuery || document.write(\'<script src="%sskeleton/js/h5bp/jquery/%s/jquery.min.js"><\/script>\')</script>' % (settings.SKELETON_STATIC_URL, v)
+            ]
+        else:
+            output=[
+                '<script src="//ajax.googleapis.com/ajax/libs/jquery/%s/jquery.min.js"></script>' % v,
+                '<script>window.jQuery || document.write(\'<script src="%sskeleton/js/h5bp/jquery/%s/jquery.min.js"><\/script>\')</script>' % (settings.STATIC_URL, v)
+            ]
         return '\n'.join(output)
 
 
