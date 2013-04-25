@@ -1,6 +1,12 @@
 Changelog
 ==============
 
+0.7.0
+-----
+* Added jQuery 2.0.0 (HTML5 Boilerplate)
+* Added SKELETON_STATIC_URL for optional dedicated static server/CDN setting
+* Added Road Map
+
 0.6.0
 -----
 * Remove Google Analytics protocol check (HTML5 Boilerplate)
