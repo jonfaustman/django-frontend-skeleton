@@ -1,6 +1,10 @@
 Changelog
 ==============
 
+0.7.1
+------
+* Update to Twitter Bootstrap 2.3.2 (Twitter Bootstrap)
+
 0.7.0
 -----
 * Added jQuery 2.0.0 (HTML5 Boilerplate)

@@ -1,5 +1,5 @@
 Template blocks
-==============
+================
 Use the included template blocks to suit your needs
 
 Some blocks are specific to HTML5 Boilerplate or Twitter Bootstrap, while most are simply useful for template extension.

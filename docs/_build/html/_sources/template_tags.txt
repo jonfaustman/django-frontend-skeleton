@@ -115,7 +115,7 @@ Or
 
 bootstrap_js
 ~~~~~~~~~~~~~
-Returns Twitter Bootstrap (2.3.1) JavaScript file(s). all returns concatenated file; full file for TEMPLATE_DEBUG, minified otherwise. Other choices include:
+Returns Twitter Bootstrap (2.3.2) JavaScript file(s). all returns concatenated file; full file for TEMPLATE_DEBUG, minified otherwise. Other choices include:
 
 * affix
 * alert
