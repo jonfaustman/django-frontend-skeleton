@@ -1,0 +1,147 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Road Map &mdash; django-frontend-skeleton 0.7.2 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.7.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="django-frontend-skeleton 0.7.2 documentation" href="index.html" />
+    <link rel="prev" title="Changelog" href="changelog.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="changelog.html" title="Changelog"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">django-frontend-skeleton 0.7.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="road-map">
+<h1>Road Map<a class="headerlink" href="#road-map" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>0.8.0<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>There will be wide-sweeping, non-backwards compatible changes - read carefully!</li>
+<li>The package will be renamed to djfrontend.djfrontend_skeleton. This will affect INSTALLED_APPS settings as well as the static location.</li>
+<li>The template tags will be combined into a single djfrontend_skeleton.py.</li>
+<li>{% load djfrontend_skeleton %} will load all template tags.</li>
+<li>&#8216;bootstrap&#8217; will be renamed &#8216;twbs&#8217; to reflect their branding change for 3.0.0.</li>
+<li>Every template tag will be namespaced with djfrontend_. Full name changes are below:</li>
+<li>skeleton_ios_fix &#8211;&gt; djfrontend_ios_fix</li>
+<li>h5bp_html &#8211;&gt; djfrontend_html</li>
+<li>h5bp_normalize &#8211;&gt; djfrontend_normalize</li>
+<li>h5bp_css &#8211;&gt; djfrontend_h5bp_css</li>
+<li>h5bp_modernizr &#8211;&gt; djfrontend_modernizr</li>
+<li>h5bp_jquery &#8211;&gt; djfrontend_jquery</li>
+<li>h5bp_ga &#8211;&gt; djfrontend_ga</li>
+<li>bootstrap_css &#8211;&gt; djfrontend_twbs_css</li>
+<li>bootstrap_responsive_css &#8211;&gt; djfrontend_twbs_responsive_css</li>
+<li>bootstrap_js &#8211;&gt; djfrontend_twbs_js</li>
+<li>djfrontend_twbs_css, djfrontend_twbs_responsive_css and djfrontend_normalize will now require to be passed a version number.</li>
+<li>djfrontend_normalize, djfrontend_modernizr and djfrontend_jquery will be moved outside of h5bp to their own respective directories.</li>
+<li>All optional settings will be namespaced with djfrontend_. Full name changes are below:</li>
+<li>SKELETON_STATIC_URL &#8211;&gt; DJFRONTEND_STATIC_URL</li>
+<li>H5BP_GA_SETDOMAINNAME &#8211;&gt; DJFRONTEND_GA_SETDOMAINNAME</li>
+<li>H5BP_GA_SETALLOWLINKER &#8211;&gt; DJFRONTEND_GA_SETALLOWLINKER</li>
+<li>Template block names remain the same, although some are being considered for the chopping block.</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>1.0.0<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Combine template tag libraries into skeleton. Tags will retain their name, but will require only one load.</li>
+<li>Use Git submodules for external libraries.</li>
+<li>Remove block ios_fix</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Road Map</a><ul>
+<li><a class="reference internal" href="#id1">0.8.0</a></li>
+<li><a class="reference internal" href="#id2">1.0.0</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="changelog.html"
+                        title="previous chapter">Changelog</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/road_map.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="changelog.html" title="Changelog"
+             >previous</a> |</li>
+        <li><a href="index.html">django-frontend-skeleton 0.7.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Jon Faustman.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
