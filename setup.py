@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '0.7.1'
+version = '0.7.2'
 
 setup(name='django-frontend-skeleton',
       version=version,
@@ -20,7 +20,7 @@ setup(name='django-frontend-skeleton',
           ],
       keywords='',
       author='Jon Faustman',
-      author_email='jon.faustman@gmail.com',
+      author_email='jon@faustman.org',
       url='http://github.com/jonfaustman/django-frontend-skeleton',
       license='MIT',
       packages=find_packages(),

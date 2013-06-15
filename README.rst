@@ -21,4 +21,4 @@ More Information
 
 For more information, instructions on how to get started, a changelog and a roadmap `read the documentation <https://django-frontend-skeleton.readthedocs.org/>`_.
 
-*!important - The 0.8.0 upgrade will include wide-sweeping, non-backwards compatible changes  - `read the roadmap <https://django-frontend-skeleton.readthedocs.org/en/latest/road_map.html>`_ carefully!*
+**!important** - The 0.8.0 upgrade will include wide-sweeping, non-backwards compatible changes  - `read the roadmap <https://django-frontend-skeleton.readthedocs.org/en/latest/road_map.html>`_ carefully!
