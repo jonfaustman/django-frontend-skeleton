@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '0.7.2'
+version = '0.8.0'
 
 setup(name='django-frontend-skeleton',
       version=version,
