@@ -50,7 +50,35 @@
   <div class="section" id="road-map">
 <h1>Road Map<a class="headerlink" href="#road-map" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id1">
-<h2>1.0.0<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>0.8.0<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>There will be wide-sweeping, non-backwards compatible changes - read carefully!</li>
+<li>The package will be renamed to djfrontend.djfrontend_skeleton. This will affect INSTALLED_APPS settings as well as the static location.</li>
+<li>The template tags will be combined into a single djfrontend_skeleton.py.</li>
+<li>{% load djfrontend_skeleton %} will load all template tags.</li>
+<li>&#8216;bootstrap&#8217; will be renamed &#8216;twbs&#8217; to reflect their branding change for 3.0.0.</li>
+<li>Every template tag will be namespaced with djfrontend_. Full name changes are below:</li>
+<li>skeleton_ios_fix &#8211;&gt; djfrontend_ios_fix</li>
+<li>h5bp_html &#8211;&gt; djfrontend_html</li>
+<li>h5bp_normalize &#8211;&gt; djfrontend_normalize</li>
+<li>h5bp_css &#8211;&gt; djfrontend_h5bp_css</li>
+<li>h5bp_modernizr &#8211;&gt; djfrontend_modernizr</li>
+<li>h5bp_jquery &#8211;&gt; djfrontend_jquery</li>
+<li>h5bp_ga &#8211;&gt; djfrontend_ga</li>
+<li>bootstrap_css &#8211;&gt; djfrontend_twbs_css</li>
+<li>bootstrap_responsive_css &#8211;&gt; djfrontend_twbs_responsive_css</li>
+<li>bootstrap_js &#8211;&gt; djfrontend_twbs_js</li>
+<li>djfrontend_twbs_css, djfrontend_twbs_responsive_css and djfrontend_normalize will now require to be passed a version number.</li>
+<li>djfrontend_normalize, djfrontend_modernizr and djfrontend_jquery will be moved outside of h5bp to their own respective directories.</li>
+<li>All optional settings will be namespaced with djfrontend_. Full name changes are below:</li>
+<li>SKELETON_STATIC_URL &#8211;&gt; DJFRONTEND_STATIC_URL</li>
+<li>H5BP_GA_SETDOMAINNAME &#8211;&gt; DJFRONTEND_GA_SETDOMAINNAME</li>
+<li>H5BP_GA_SETALLOWLINKER &#8211;&gt; DJFRONTEND_GA_SETALLOWLINKER</li>
+<li>Template block names remain the same, although some are being considered for the chopping block.</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>1.0.0<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Combine template tag libraries into skeleton. Tags will retain their name, but will require only one load.</li>
 <li>Use Git submodules for external libraries.</li>
@@ -68,7 +96,8 @@
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Road Map</a><ul>
-<li><a class="reference internal" href="#id1">1.0.0</a></li>
+<li><a class="reference internal" href="#id1">0.8.0</a></li>
+<li><a class="reference internal" href="#id2">1.0.0</a></li>
 </ul>
 </li>
 </ul>

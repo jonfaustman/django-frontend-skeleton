@@ -1,6 +1,11 @@
 Changelog
 ==============
 
+0.7.2
+------
+* Update to jQuery 1.10.1 and 2.0.2 (HTML5 Boilerplate)
+* Update docs to include SKELETON_STATIC_URL.
+
 0.7.1
 ------
 * Update to Twitter Bootstrap 2.3.2 (Twitter Bootstrap)

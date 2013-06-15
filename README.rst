@@ -11,7 +11,7 @@ Starring
 ---------
 * `HTML5 Boilerplate (based on 4.2.0) <https://github.com/h5bp/html5-boilerplate>`_
 * `Modernizr (2.6.2) <https://github.com/Modernizr/Modernizr>`_
-* `jQuery (1.9.1) and (2.0.0) <https://github.com/jquery/jquery>`_
+* `jQuery (1.10.1) and (2.0.2) <https://github.com/jquery/jquery>`_
 * `Twitter Bootstrap (2.3.2) <https://github.com/twitter/bootstrap>`_
 * `iOS-Orientationchange-Fix <https://github.com/scottjehl/iOS-Orientationchange-Fix>`_
 
@@ -19,4 +19,6 @@ Starring
 More Information
 -----------------
 
-For more information, instructions on how to get started, and changes in the current version `read the documentation <https://django-frontend-skeleton.readthedocs.org/>`_.
+For more information, instructions on how to get started, a changelog and a roadmap `read the documentation <https://django-frontend-skeleton.readthedocs.org/>`_.
+
+**!important - The 0.8.0 upgrade will include wide-sweeping, non-backwards compatible changes - `read the roadmap <https://django-frontend-skeleton.readthedocs.org/en/latest/road_map.html>`_ carefully!**

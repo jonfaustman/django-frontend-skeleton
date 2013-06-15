@@ -62,17 +62,17 @@ Or
 
 h5bp_jquery
 ~~~~~~~~~~~~
-Returns jQuery JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file from Google CDN with local fallback. The latest '1.9.1' is the default and is included.
+Returns jQuery JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file from Google CDN with local fallback. The latest '1.10.1' is included as the default, '2.0.2' is also included.
 ::
 
-    <script src="/static/skeleton/js/h5bp/jquery/1.9.1/jquery.js"></script>
+    <script src="/static/skeleton/js/h5bp/jquery/1.10.1/jquery.js"></script>
 
 Or
 
 ::
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/static/skeleton/js/h5bp/jquery/1.9.1/jquery.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/skeleton/js/h5bp/jquery/1.10.1/jquery.min.js"><\/script>')</script>
 
 h5bp_ga
 ~~~~~~~~
