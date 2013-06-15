@@ -1,8 +1,7 @@
-{% load h5bp %}
-{% load bootstrap %}
+{% load djfrontend_skeleton %}
 {% block html %}
 <!DOCTYPE html>
-{% h5bp_html 'en' %}
+{% djfrontend_html 'en' %}
 {% endblock html %}
 <head>
     {% block meta %}
@@ -15,13 +14,13 @@
     {% block head_css %}
         {% block h5bp_css %}
         {% endblock h5bp_css %}
-        {% block bootstrap_css %}
-            {% bootstrap_css %}
-            {% bootstrap_responsive_css %}
-        {% endblock bootstrap_css %}
+        {% block twbs_css %}
+            {% twbs_css '2.3.2' %}
+            {% twbs_responsive_css '2.3.2' %}
+        {% endblock twbs_css %}
     {% endblock head_css %}
     {% block head_js %}
-        {% h5bp_modernizr '2.6.2' %}
+        {% djfrontend_modernizr '2.6.2' %}
     {% endblock head_js %}
 </head>
 <body id="{% block body_id %}{% endblock body_id %}" class="{% block body_class %}{% endblock body_class %}">
@@ -33,14 +32,14 @@
     <![endif]-->
     {% endblock body_content %}
     {% block body_js %}
-        {% block h5bp_jquery %}
-            {% h5bp_jquery '1.9.1' %}
-        {% endblock h5bp_jquery %}
-        {% block bootstrap_js %}
-            {% bootstrap_js all %}
-        {% endblock bootstrap_js %}
-        {% block h5bp_ga %}
-        {% endblock h5bp_ga %}
+        {% block jquery %}
+            {% djfrontend_jquery '1.10.1' %}
+        {% endblock jquery %}
+        {% block twbs_js %}
+            {% twbs_js all %}
+        {% endblock twbs_js %}
+        {% block djfrontend_ga %}
+        {% endblock djfrontend_ga %}
         {% block ios_fix %}
         {% endblock ios_fix %}
     {% endblock body_js %}
