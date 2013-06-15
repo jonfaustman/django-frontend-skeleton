@@ -5,6 +5,7 @@ Changelog
 ------
 * Update to jQuery 1.10.1 and 2.0.2 (HTML5 Boilerplate)
 * Update docs to include SKELETON_STATIC_URL.
+* Include individual licenses.
 
 0.7.1
 ------
