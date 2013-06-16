@@ -1,7 +1,7 @@
-{% load djfrontend_skeleton %}
+{% load djfrontend %}
 {% block html %}
 <!DOCTYPE html>
-{% djfrontend_html 'en' %}
+{% djfrontend_h5bp_html 'en' %}
 {% endblock html %}
 <head>
     {% block meta %}
@@ -12,15 +12,9 @@
     <meta name="description" content="{% block meta_description %}{% endblock meta_description %}">
     {% endblock meta %}
     {% block head_css %}
-        {% block h5bp_css %}
-        {% endblock h5bp_css %}
-        {% block twbs_css %}
-            {% twbs_css '2.3.2' %}
-            {% twbs_responsive_css '2.3.2' %}
-        {% endblock twbs_css %}
     {% endblock head_css %}
     {% block head_js %}
-        {% djfrontend_modernizr '2.6.2' %}
+        <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     {% endblock head_js %}
 </head>
 <body id="{% block body_id %}{% endblock body_id %}" class="{% block body_class %}{% endblock body_class %}">
@@ -32,16 +26,7 @@
     <![endif]-->
     {% endblock body_content %}
     {% block body_js %}
-        {% block jquery %}
-            {% djfrontend_jquery '1.10.1' %}
-        {% endblock jquery %}
-        {% block twbs_js %}
-            {% twbs_js all %}
-        {% endblock twbs_js %}
-        {% block djfrontend_ga %}
-        {% endblock djfrontend_ga %}
-        {% block ios_fix %}
-        {% endblock ios_fix %}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     {% endblock body_js %}
 </body>
 </html>
