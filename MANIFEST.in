@@ -1,4 +1,4 @@
+include LICENSE
 include README.rst
-recursive-include djfrontend/djfrontend_skeleton *
-recursive-include djfrontend/lib *
+recursive-include djfrontend *
 recursive-include docs *
