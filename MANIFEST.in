@@ -2,3 +2,4 @@ include LICENSE
 include README.rst
 recursive-include djfrontend *
 recursive-include docs *
+recursive-include lib *
