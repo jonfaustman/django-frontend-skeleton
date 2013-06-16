@@ -10,7 +10,7 @@ Django Frontend Skeleton is a basic Django template skeleton built on `HTML5 Boi
 
 With the convenience of an installable Django application, create custom templates built on top of one of the most well-known, widespread templates (HTML5 Boilerplate) and a robust front-end framework (Twitter Bootstrap.)
 
-**!important - The 0.8.0 upgrade will include wide-sweeping, non-backwards compatible changes - read the roadmap carefully!**
+**!important - The 1.0.0 upgrade included wide-sweeping, non-backwards compatible changes - read the roadmap carefully!**
 
 Starring
 ---------
