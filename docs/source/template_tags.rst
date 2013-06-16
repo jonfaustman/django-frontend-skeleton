@@ -61,8 +61,9 @@ Or
 
 djfrontend_jqueryui
 ~~~~~~~~~~~~~~~~~~~~~
-Returns jQuery UI plugin JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file from Google CDN with local fallback. The latest '1.10.3' is included.
-Not a part of skeleton but can be used inside one of the included template blocks.
+**Not a part of django-frontend-skeleton but can be used inside one of the included template blocks if static files are added.**
+
+Returns jQuery UI plugin JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file from Google CDN with local fallback.
 ::
 
     <script src="/static/djfrontend/js/jquery/jqueryui/1.10.3/jquery-ui.js"></script>
@@ -76,8 +77,9 @@ Or
 
 djfrontend_jquery_datatables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Returns the jQuery DataTables plugin JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file. The latest '1.9.4' is included.
-Not a part of skeleton but can be used inside one of the included template blocks.
+**Not a part of django-frontend-skeleton but can be used inside one of the included template blocks if static files are added.**
+
+Returns the jQuery DataTables plugin JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file.
 ::
 
     <script src="/static/djfrontend/js/jquery/jquery.dataTables/1.9.4/jquery.dataTables.js"></script>
@@ -90,16 +92,18 @@ Or
 
 djfrontend_jquery_datatables_css
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Returns the jQuery DataTables CSS file according to version number. The latest '1.9.4' is included.
-Not a part of skeleton but can be used inside one of the included template blocks.
+**Not a part of django-frontend-skeleton but can be used inside one of the included template blocks if static files are added.**
+
+Returns the jQuery DataTables CSS file according to version number.
 ::
 
     <link rel="stylesheet" href="/static/djfrontend/css/jquery/jquery.dataTables/1.9.4/jquery.dataTables.css">
 
 djfrontend_jquery_formset
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Returns the jQuery Dynamic Formset plugin JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file. The latest '1.2' is included.
-Not a part of skeleton but can be used inside one of the included template blocks.
+**Not a part of django-frontend-skeleton but can be used inside one of the included template blocks if static files are added.**
+
+Returns the jQuery Dynamic Formset plugin JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file.
 ::
 
     <script src="/static/djfrontend/js/jquery/jquery.formset/1.2/jquery.formset.js"></script>
@@ -112,8 +116,9 @@ Or
 
 djfrontend_jquery_smoothscroll
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Returns the jQuery Smooth Scroll plugin JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file. The latest '1.4.10' is included.
-Not a part of skeleton but can be used inside one of the included template blocks.
+**Not a part of django-frontend-skeleton but can be used inside one of the included template blocks if static files are added.**
+
+Returns the jQuery Smooth Scroll plugin JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file.
 ::
 
     <script src="/static/djfrontend/js/jquery/jquery.smooth-scroll/1.4.10/jquery.smooth-scroll.js"></script>
