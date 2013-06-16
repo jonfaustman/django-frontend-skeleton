@@ -1,0 +1,36 @@
+{% extends 'djfrontend/base.html' %}
+{% load djfrontend %}
+
+    {% block head_css %}
+        
+        {% block djfrontend_h5bp_css %}
+        {% endblock djfrontend_h5bp_css %}
+        
+        {% block djfrontend_twbs_css %}
+            {% djfrontend_twbs_css '2.3.2' %}
+            {% djfrontend_twbs_responsive_css '2.3.2' %}
+        {% endblock djfrontend_twbs_css %}
+        
+    {% endblock head_css %}
+    
+    {% block head_js %}
+        {% djfrontend_modernizr '2.6.2' %}
+    {% endblock head_js %}
+    
+    {% block body_js %}
+        
+        {% block djfrontend_jquery %}
+            {% djfrontend_jquery '1.10.1' %}
+        {% endblock djfrontend_jquery %}
+        
+        {% block djfrontend_twbs_js %}
+            {% djfrontend_twbs_js all %}
+        {% endblock djfrontend_twbs_js %}
+        
+        {% block djfrontend_ga %}
+        {% endblock djfrontend_ga %}
+        
+        {% block djfrontend_ios_fix %}
+        {% endblock djfrontend_ios_fix %}
+        
+    {% endblock body_js %}

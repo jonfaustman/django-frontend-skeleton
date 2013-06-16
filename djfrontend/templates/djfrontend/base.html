@@ -1,8 +1,7 @@
-{% load h5bp %}
-{% load bootstrap %}
+{% load djfrontend %}
 {% block html %}
 <!DOCTYPE html>
-{% h5bp_html 'en' %}
+{% djfrontend_h5bp_html 'en' %}
 {% endblock html %}
 <head>
     {% block meta %}
@@ -13,15 +12,9 @@
     <meta name="description" content="{% block meta_description %}{% endblock meta_description %}">
     {% endblock meta %}
     {% block head_css %}
-        {% block h5bp_css %}
-        {% endblock h5bp_css %}
-        {% block bootstrap_css %}
-            {% bootstrap_css %}
-            {% bootstrap_responsive_css %}
-        {% endblock bootstrap_css %}
     {% endblock head_css %}
     {% block head_js %}
-        {% h5bp_modernizr '2.6.2' %}
+        <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     {% endblock head_js %}
 </head>
 <body id="{% block body_id %}{% endblock body_id %}" class="{% block body_class %}{% endblock body_class %}">
@@ -33,16 +26,7 @@
     <![endif]-->
     {% endblock body_content %}
     {% block body_js %}
-        {% block h5bp_jquery %}
-            {% h5bp_jquery '1.9.1' %}
-        {% endblock h5bp_jquery %}
-        {% block bootstrap_js %}
-            {% bootstrap_js all %}
-        {% endblock bootstrap_js %}
-        {% block h5bp_ga %}
-        {% endblock h5bp_ga %}
-        {% block ios_fix %}
-        {% endblock ios_fix %}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     {% endblock body_js %}
 </body>
 </html>
