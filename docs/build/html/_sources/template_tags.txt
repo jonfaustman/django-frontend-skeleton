@@ -61,7 +61,7 @@ Or
 
 djfrontend_jqueryui
 ~~~~~~~~~~~~~~~~~~~~~
-**Not a part of django-frontend-skeleton but can be used inside one of the included template blocks if static files are added.**
+**Not a direct part of django-frontend-skeleton but can be used inside one of the included template blocks if static files are added.**
 
 Returns jQuery UI plugin JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file from Google CDN with local fallback.
 ::
@@ -77,7 +77,7 @@ Or
 
 djfrontend_jquery_datatables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-**Not a part of django-frontend-skeleton but can be used inside one of the included template blocks if static files are added.**
+**Not a direct part of django-frontend-skeleton but can be used inside one of the included template blocks if static files are added.**
 
 Returns the jQuery DataTables plugin JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file.
 ::
@@ -92,7 +92,7 @@ Or
 
 djfrontend_jquery_datatables_css
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-**Not a part of django-frontend-skeleton but can be used inside one of the included template blocks if static files are added.**
+**Not a direct part of django-frontend-skeleton but can be used inside one of the included template blocks if static files are added.**
 
 Returns the jQuery DataTables CSS file according to version number.
 ::
@@ -101,7 +101,7 @@ Returns the jQuery DataTables CSS file according to version number.
 
 djfrontend_jquery_formset
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-**Not a part of django-frontend-skeleton but can be used inside one of the included template blocks if static files are added.**
+**Not a direct part of django-frontend-skeleton but can be used inside one of the included template blocks if static files are added.**
 
 Returns the jQuery Dynamic Formset plugin JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file.
 ::
@@ -116,7 +116,7 @@ Or
 
 djfrontend_jquery_smoothscroll
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-**Not a part of django-frontend-skeleton but can be used inside one of the included template blocks if static files are added.**
+**Not a direct part of django-frontend-skeleton but can be used inside one of the included template blocks if static files are added.**
 
 Returns the jQuery Smooth Scroll plugin JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file.
 ::
