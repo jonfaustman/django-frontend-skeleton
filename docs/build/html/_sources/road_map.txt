@@ -1,7 +1,7 @@
 Road Map
 ==============
 
-0.8.0
+1.0.0
 ------
 * There will be wide-sweeping, non-backwards compatible changes - read carefully!
 * The package will be renamed to djfrontend.djfrontend_skeleton. This will affect INSTALLED_APPS settings as well as the static location.
@@ -27,8 +27,6 @@ Road Map
 * H5BP_GA_SETALLOWLINKER --> DJFRONTEND_GA_SETALLOWLINKER
 * Template block names remain the same, although some are being considered for the chopping block.
 
-1.0.0
+1.1.0
 -----
-* Combine template tag libraries into skeleton. Tags will retain their name, but will require only one load.
 * Use Git submodules for external libraries.
-* Remove block ios_fix

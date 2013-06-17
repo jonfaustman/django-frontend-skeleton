@@ -1,6 +1,10 @@
 Changelog
 ==============
 
+0.7.3
+------
+* Fixed jQuery version number in base.html
+
 0.7.2
 ------
 * Update to jQuery 1.10.1 and 2.0.2 (HTML5 Boilerplate)
