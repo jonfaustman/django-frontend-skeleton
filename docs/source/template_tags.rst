@@ -34,7 +34,7 @@ Returns Normalize CSS file according to version number. The latest '1.1.1' is in
 
 djfrontend_modernizr
 ~~~~~~~~~~~~~~~~~~~~~
-Returns Modernizr JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file. The latest '2.6.2' is included.
+Returns Modernizr JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file from cdnjs with local callback. The latest '2.6.2' is included.
 ::
 
     <script src="/static/djfrontend/js/modernizr/2.6.2/modernizr.js"></script>
@@ -43,21 +43,22 @@ Or
 
 ::
 
-    <script src="/static/djfrontend/js/modernizr/2.6.2/modernizr.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/%s/modernizr.min.js"></script>' % v,
+    <script>window.Modernizr || document.write(\'<script src="static/djfrontend/js/modernizr/2.6.2/modernizr.min.js"><\/script>\')</script>
 
 djfrontend_jquery
 ~~~~~~~~~~~~~~~~~~
-Returns jQuery JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file from Google CDN with local fallback. The latest '1.10.1' and '2.0.2' is included.
+Returns jQuery JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file from Google CDN with local fallback. The latest '1.10.2' and '2.0.3' is included.
 ::
 
-    <script src="/static/djfrontend/js/jquery/1.10.1/jquery.js"></script>
+    <script src="/static/djfrontend/js/jquery/1.10.2/jquery.js"></script>
 
 Or
 
 ::
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/static/djfrontend/js/jquery/1.10.1/jquery.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/djfrontend/js/jquery/1.10.2/jquery.min.js"><\/script>')</script>
 
 djfrontend_jqueryui
 ~~~~~~~~~~~~~~~~~~~~~
@@ -72,14 +73,14 @@ Or
 
 ::
 
-    <script src="/ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>' % v,
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>' % v,
     <script>window.jQueryUI || document.write(\'<script src="/static/djfrontend/js/jquery/jqueryui/1.10.3/jquery-ui.min.js"><\/script>\')</script>
 
 djfrontend_jquery_datatables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 **Not a direct part of django-frontend-skeleton but can be used inside one of the included template blocks if static files are added.**
 
-Returns the jQuery DataTables plugin JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file.
+Returns the jQuery DataTables plugin JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file from cdnjs with local fallback.
 ::
 
     <script src="/static/djfrontend/js/jquery/jquery.dataTables/1.9.4/jquery.dataTables.js"></script>
@@ -88,7 +89,8 @@ Or
 
 ::
 
-    <script src="/static/djfrontend/js/jquery/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.9.4/jquery.dataTables.min.js"></script>
+    <script>window.jQuery.fn.DataTable || document.write('<script src="/static/djfrontend/js/jquery/jquery.dataTables/1.9.4/jquery.dataTables.min.js"><\/script>')</script>
 
 djfrontend_jquery_datatables_css
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -121,43 +123,37 @@ djfrontend_jquery_smoothscroll
 Returns the jQuery Smooth Scroll plugin JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file.
 ::
 
-    <script src="/static/djfrontend/js/jquery/jquery.smooth-scroll/1.4.10/jquery.smooth-scroll.js"></script>
+    <script src="/static/djfrontend/js/jquery/jquery.smooth-scroll/1.4.11/jquery.smooth-scroll.js"></script>
 
 Or
 
 ::
 
-    <script src="/static/djfrontend/js/jquery/jquery.smooth-scroll/1.4.10/jquery.smooth-scroll.min.js"></script>
+    <script src="/static/djfrontend/js/jquery/jquery.smooth-scroll/1.4.11/jquery.smooth-scroll.min.js"></script>
 
 djfrontend_twbs_css
 ~~~~~~~~~~~~~~~~~~~~
-Returns Twitter Bootstrap CSS file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file. The latest '2.3.2' is included.
+Returns Twitter Bootstrap CSS file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file. The latest '3.0.0' is included.
 ::
 
-    <link rel="stylesheet" href="/static/djfrontend/css/twbs/2.3.2/bootstrap.css">
+    <link rel="stylesheet" href="/static/djfrontend/css/twbs/3.0.0/bootstrap.css">
 
 Or
 
 ::
 
-    <link rel="stylesheet" href="/static/djfrontend/css/twbs/2.3.2/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/djfrontend/css/twbs/3.0.0/bootstrap.min.css">
 
-djfrontend_twbs_responsive_css
+djfrontend_twbs_glyphicons
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Returns Twitter Bootstrap responsive CSS file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file. The latest '2.3.2' is included.
+Returns Twitter Bootstrap Glyphicons CSS file according to version number.
 ::
 
-    <link rel="stylesheet" href="/static/djfrontend/css/twbs/2.3.2/bootstrap-responsive.css">
-
-Or
-
-::
-
-    <link rel="stylesheet" href="/static/djfrontend/css/twbs/2.3.2/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/static/djfrontend/css/twbs/3.0.0/bootstrap-glyphicons.css">
 
 djfrontend_twbs_js
 ~~~~~~~~~~~~~~~~~~~~
-Returns Twitter Bootstrap (2.3.2) JavaScript file(s). all returns concatenated file; full file for TEMPLATE_DEBUG, minified otherwise. Other choices include:
+Returns Twitter Bootstrap (3.0.0) JavaScript file(s). all returns concatenated file; full file for TEMPLATE_DEBUG, minified otherwise. Other choices include:
 
 * affix
 * alert
@@ -171,26 +167,25 @@ Returns Twitter Bootstrap (2.3.2) JavaScript file(s). all returns concatenated f
 * tab
 * tooltip
 * transition
-* typeahead
 
 Individual files are not minified.
 
 {% boostrap_js all %} would render
 ::
 
-    <script src="/static/djfrontend/js/twbs/2.3.2/bootstrap.js"></script>
+    <script src="/static/djfrontend/js/twbs/3.0.0/bootstrap.js"></script>
 
 Or
 
 ::
 
-    <script src="/static/djfrontend/js/twbs/2.3.2/bootstrap.min.js"></script>
+    <script src="/static/djfrontend/js/twbs/3.0.0/bootstrap.min.js"></script>
 
 {% bootstrap_js alert affix %} would render
 ::
 
-    <script src="/static/djfrontend/js/twbs/2.3.2/bootstrap-affix.js"></script>
-    <script src="/static/djfrontend/js/twbs/2.3.2/bootstrap-alert.js"></script>
+    <script src="/static/djfrontend/js/twbs/3.0.0/bootstrap-affix.js"></script>
+    <script src="/static/djfrontend/js/twbs/3.0.0/bootstrap-alert.js"></script>
 
 Shout out to Ryan Brady and his `Django Bootstrapped <https://github.com/rbrady/django-bootstrapped>`_ for inspiration and initial code.
 

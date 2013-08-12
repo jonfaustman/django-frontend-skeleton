@@ -1,8 +1,3 @@
-.. django-frontend-skeleton documentation master file, created by
-   sphinx-quickstart on Fri Dec 21 10:18:08 2012.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Django Frontend Skeleton documentation
 ======================================
 
@@ -12,12 +7,15 @@ With the convenience of an installable Django application, create custom templat
 
 **!important - The 1.0.0 upgrade included wide-sweeping, non-backwards compatible changes - read the roadmap carefully!**
 
+:Package: `https://pypi.python.org/pypi/django-frontend-skeleton <https://pypi.python.org/pypi/django-frontend-skeleton>`_
+:Source: `https://github.com/jonfaustman/django-frontend-skeleton <https://github.com/jonfaustman/django-frontend-skeleton>`_
+
 Starring
 ---------
 * `HTML5 Boilerplate (based on 4.2.0) <https://github.com/h5bp/html5-boilerplate>`_
 * `Modernizr (2.6.2) <https://github.com/Modernizr/Modernizr>`_
-* `jQuery (1.10.1) and (2.0.2) <https://github.com/jquery/jquery>`_
-* `Twitter Bootstrap (2.3.2) <https://github.com/twitter/bootstrap>`_
+* `jQuery (1.10.2) and (2.0.3) <https://github.com/jquery/jquery>`_
+* `Twitter Bootstrap (3.0.0 RC1) <https://github.com/twbs/bootstrap>`_
 * `iOS-Orientationchange-Fix <https://github.com/scottjehl/iOS-Orientationchange-Fix>`_
 
 
