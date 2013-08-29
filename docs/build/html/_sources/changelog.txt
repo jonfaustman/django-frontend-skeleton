@@ -1,6 +1,10 @@
 Changelog
 ==============
 
+1.1.1
+------
+* Twitter Bootstrap updated to v3.0.0 RC2
+
 1.1.0
 ------
 * jQuery updated to v1.10.2 and v2.0.3
