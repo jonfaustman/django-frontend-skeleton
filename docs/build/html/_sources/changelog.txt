@@ -1,6 +1,14 @@
 Changelog
 ==============
 
+1.2.0
+-----
+* Updated Twitter Bootstrap to v3.0.0
+* Added djfrontend_twbs_theme_css template tag
+* Added bootstrap-theme.css and bootstrap-theme.min.css
+* Removed djfrontend_twbs_glyphicons template tag
+* Removed bootstrap-glyphicons.css
+
 1.1.1
 ------
 * Twitter Bootstrap updated to v3.0.0 RC2
