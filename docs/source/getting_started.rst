@@ -4,7 +4,7 @@ Getting Started
 Install
 --------
 1. install `django-frontend-skeleton` (pip install, add to your requirements files, etc.)
-2. add `'djfrontend'` to your INSTALLED_APPS
+2. add `'djfrontend'` and `'djfrontend.skeleton'` to your INSTALLED_APPS
 
 Extend
 -------
