@@ -6,6 +6,8 @@ Django Frontend Skeleton is a basic Django template skeleton built on `HTML5 Boi
 
 With the convenience of an installable Django application, create custom templates built on top of one of the most well-known, widespread templates (HTML5 Boilerplate) and a robust front-end framework (Twitter Bootstrap.)
 
+Version 2.0.0 of Django Frontend Skeleton is a much simpler package - it's now just a small extended 'skeleton' template, which requires Django Frontend. No more duplication!
+
 ---------
 Starring
 ---------
@@ -20,5 +22,3 @@ More Information
 -----------------
 
 For more information, instructions on how to get started, a changelog and a roadmap `read the documentation <https://django-frontend-skeleton.readthedocs.org/>`_.
-
-**!important** - The 1.0.0 upgrade included wide-sweeping, non-backwards compatible changes  - `read the changelog <https://django-frontend-skeleton.readthedocs.org/en/latest/road_map.html>`_ carefully!
