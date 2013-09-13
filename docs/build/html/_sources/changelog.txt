@@ -1,6 +1,14 @@
 Changelog
 ==============
 
+2.0.0
+------
+* Made Django Frontend Skeleton a much simpler package. It's now just a small extended skeleton template, which requires Django Frontend.
+* Namedspaced skeleton, it's now 'djfrontend.skeleton'.
+* Removed all static assets - they will be included in django-frontend.
+* Removed base.html template - it will be included in django-frontend.
+* Removed template tags - they will be included in django-frontend.
+
 1.2.0
 -----
 * Updated Twitter Bootstrap to v3.0.0
