@@ -135,7 +135,7 @@ djfrontend_jquery_formset
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 **Not a direct part of django-frontend-skeleton but can be used inside one of the included template blocks if static files are added.**
 
-Returns the jQuery Dynamic Formset plugin JavaScript file according to version number. TTEMPLATE_DEBUG returns full file, otherwise returns minified file from cdnjs with local fallback.
+Returns the jQuery Dynamic Formset plugin JavaScript file according to version number. TEMPLATE_DEBUG returns full file, otherwise returns minified file from cdnjs with local fallback.
 ::
 
     <script src="/static/djfrontend/js/jquery/jquery.formset/1.2/jquery.formset.js"></script>
