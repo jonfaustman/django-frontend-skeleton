@@ -11,7 +11,7 @@ Version 2.0.0 of Django Frontend Skeleton is a much simpler package - it's now j
 ---------
 Starring
 ---------
-* `HTML5 Boilerplate (based on 4.2.0) <https://github.com/h5bp/html5-boilerplate>`_
+* `HTML5 Boilerplate (based on 4.3.0) <https://github.com/h5bp/html5-boilerplate>`_
 * `Modernizr (2.6.2) <https://github.com/Modernizr/Modernizr>`_
 * `jQuery (1.10.2) and (2.0.3) <https://github.com/jquery/jquery>`_
 * `Twitter Bootstrap (3.0.0) <https://github.com/twbs/bootstrap>`_

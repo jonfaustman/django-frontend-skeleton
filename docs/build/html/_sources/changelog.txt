@@ -1,6 +1,10 @@
 Changelog
 ==============
 
+2.0.1
+------
+* Updated requires to intall at least django-frontend 0.3.1.
+
 2.0.0
 ------
 * Made Django Frontend Skeleton a much simpler package. It's now just a small extended skeleton template, which requires Django Frontend.
