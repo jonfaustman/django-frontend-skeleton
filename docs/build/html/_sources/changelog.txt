@@ -3,7 +3,7 @@ Changelog
 
 2.0.1
 ------
-* Updated requires to intall at least django-frontend 0.3.1.
+* Updated requires to install at least django-frontend 0.3.1.
 
 2.0.0
 ------
