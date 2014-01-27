@@ -18,7 +18,49 @@ Starring
 * `Twitter Bootstrap (3.0.0) <https://github.com/twbs/bootstrap>`_
 * `iOS-Orientationchange-Fix <https://github.com/scottjehl/iOS-Orientationchange-Fix>`_
 
+Getting Started
+-----------------
 
+Install
+~~~~~~~~
+1. install `django-frontend-skeleton` (pip install, add to your requirements files, etc.)
+2. add `'djfrontend'` and `'djfrontend.skeleton'` to your INSTALLED_APPS
+3. make sure `'django.contrib.staticfiles'` is also in your INSTALLED_APPS
+
+Extend
+~~~~~~~
+Extend the skeleton's base template in your template(s)
+::
+
+    {% extends 'djfrontend/skeleton.html' %}
+
+Load
+~~~~~~
+Load all the djfrontend tags if you want to add or change the template's defaults.
+::
+
+    {% load djfrontend %}
+
+
+Template Blocks
+----------------
+Template blocks provided by Django Frontend which are fundamental for Django Frontend Skeleton.
+
+djfrontend_h5bp_css
+~~~~~~~~~~~~~~~~~~~~~
+Block to include {% djfrontend_normalize %} and/or {% djfrontend_h5bp_css %}.
+
+djfrontend_twbs_css
+~~~~~~~~~~~~~~~~~~~~~
+Block to override the included Twitter Bootstrap CSS and responsive CSS files.
+
+djfrontend_twbs_js
+~~~~~~~~~~~~~~~~~~~~
+Override the included {% djfrontend_twbs_js %}.
+
+Further Documentation
+----------------------
+For more documenation about Django Frontend `read the documentation <https://django-frontend.readthedocs.org/>`_.
 
 Contents
 ---------
@@ -26,9 +68,5 @@ Contents
 .. toctree::
    :maxdepth: 2
    
-   getting_started
-   template_tags
-   template_blocks
-   optional_settings
    license
    changelog

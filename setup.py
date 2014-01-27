@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '2.0.1'
+version = '3.0.0'
 
 setup(name='django-frontend-skeleton',
       version=version,
@@ -24,7 +24,7 @@ setup(name='django-frontend-skeleton',
       url='http://github.com/jonfaustman/django-frontend-skeleton',
       license='MIT',
       packages=find_packages(),
-      install_requires = ['django-frontend>=0.3.1'],
+      install_requires = ['django-frontend>=1.0.0'],
       include_package_data=True,
       zip_safe=False,
     )

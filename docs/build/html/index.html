@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Django Frontend Skeleton documentation &mdash; django-frontend-skeleton 2.0.1 documentation</title>
+    <title>Django Frontend Skeleton documentation &mdash; django-frontend-skeleton 3.0.0 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -16,7 +16,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '',
-        VERSION:     '2.0.1',
+        VERSION:     '3.0.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -25,8 +25,8 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="django-frontend-skeleton 2.0.1 documentation" href="#" />
-    <link rel="next" title="Getting Started" href="getting_started.html" /> 
+    <link rel="top" title="django-frontend-skeleton 3.0.0 documentation" href="#" />
+    <link rel="next" title="License" href="license.html" /> 
   </head>
   <body>
     <div class="related">
@@ -36,9 +36,9 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="getting_started.html" title="Getting Started"
+          <a href="license.html" title="License"
              accesskey="N">next</a> |</li>
-        <li><a href="#">django-frontend-skeleton 2.0.1 documentation</a> &raquo;</li> 
+        <li><a href="#">django-frontend-skeleton 3.0.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -72,56 +72,74 @@
 <li><a class="reference external" href="https://github.com/scottjehl/iOS-Orientationchange-Fix">iOS-Orientationchange-Fix</a></li>
 </ul>
 </div>
+<div class="section" id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="install">
+<h3>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>install <cite>django-frontend-skeleton</cite> (pip install, add to your requirements files, etc.)</li>
+<li>add <cite>&#8216;djfrontend&#8217;</cite> and <cite>&#8216;djfrontend.skeleton&#8217;</cite> to your INSTALLED_APPS</li>
+<li>make sure <cite>&#8216;django.contrib.staticfiles&#8217;</cite> is also in your INSTALLED_APPS</li>
+</ol>
+</div>
+<div class="section" id="extend">
+<h3>Extend<a class="headerlink" href="#extend" title="Permalink to this headline">¶</a></h3>
+<p>Extend the skeleton&#8217;s base template in your template(s)</p>
+<div class="highlight-python"><pre>{% extends 'djfrontend/skeleton.html' %}</pre>
+</div>
+</div>
+<div class="section" id="load">
+<h3>Load<a class="headerlink" href="#load" title="Permalink to this headline">¶</a></h3>
+<p>Load all the djfrontend tags if you want to add or change the template&#8217;s defaults.</p>
+<div class="highlight-python"><pre>{% load djfrontend %}</pre>
+</div>
+</div>
+</div>
+<div class="section" id="template-blocks">
+<h2>Template Blocks<a class="headerlink" href="#template-blocks" title="Permalink to this headline">¶</a></h2>
+<p>Template blocks provided by Django Frontend which are fundamental for Django Frontend Skeleton.</p>
+<div class="section" id="djfrontend-h5bp-css">
+<h3>djfrontend_h5bp_css<a class="headerlink" href="#djfrontend-h5bp-css" title="Permalink to this headline">¶</a></h3>
+<p>Block to include {% djfrontend_normalize %} and/or {% djfrontend_h5bp_css %}.</p>
+</div>
+<div class="section" id="djfrontend-twbs-css">
+<h3>djfrontend_twbs_css<a class="headerlink" href="#djfrontend-twbs-css" title="Permalink to this headline">¶</a></h3>
+<p>Block to override the included Twitter Bootstrap CSS and responsive CSS files.</p>
+</div>
+<div class="section" id="djfrontend-twbs-js">
+<h3>djfrontend_twbs_js<a class="headerlink" href="#djfrontend-twbs-js" title="Permalink to this headline">¶</a></h3>
+<p>Override the included {% djfrontend_twbs_js %}.</p>
+</div>
+</div>
+<div class="section" id="further-documentation">
+<h2>Further Documentation<a class="headerlink" href="#further-documentation" title="Permalink to this headline">¶</a></h2>
+<p>For more documenation about Django Frontend <a class="reference external" href="https://django-frontend.readthedocs.org/">read the documentation</a>.</p>
+</div>
 <div class="section" id="contents">
 <h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="getting_started.html#install">Install</a></li>
-<li class="toctree-l2"><a class="reference internal" href="getting_started.html#extend">Extend</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="template_tags.html">Template tags</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="template_tags.html#djfrontend">djfrontend</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="template_blocks.html">Template blocks</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="template_blocks.html#html">html</a></li>
-<li class="toctree-l2"><a class="reference internal" href="template_blocks.html#meta">meta</a></li>
-<li class="toctree-l2"><a class="reference internal" href="template_blocks.html#head-css">head_css</a></li>
-<li class="toctree-l2"><a class="reference internal" href="template_blocks.html#head-js">head_js</a></li>
-<li class="toctree-l2"><a class="reference internal" href="template_blocks.html#body-id">body_id</a></li>
-<li class="toctree-l2"><a class="reference internal" href="template_blocks.html#body-class">body_class</a></li>
-<li class="toctree-l2"><a class="reference internal" href="template_blocks.html#body-content">body_content</a></li>
-<li class="toctree-l2"><a class="reference internal" href="template_blocks.html#body-js">body_js</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="optional_settings.html">Optional Settings</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="optional_settings.html#djfrontend-static-url">DJFRONTEND_STATIC_URL</a></li>
-<li class="toctree-l2"><a class="reference internal" href="optional_settings.html#djfrontend-ga-setdomainname">DJFRONTEND_GA_SETDOMAINNAME</a></li>
-<li class="toctree-l2"><a class="reference internal" href="optional_settings.html#djfrontend-ga-setallowlinker">DJFRONTEND_GA_SETALLOWLINKER</a></li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="license.html#component-specific-licenses">Component Specific Licenses</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id1">2.0.1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id2">2.0.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id3">1.2.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id4">1.1.1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id5">1.1.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id6">1.0.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id7">0.7.2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id8">0.7.1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id9">0.7.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id10">0.6.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id11">0.5.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id12">0.4.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id13">0.3.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id14">0.2.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id15">0.1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id1">3.0.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id2">2.0.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id3">2.0.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id4">1.2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id5">1.1.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id6">1.1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id7">1.0.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id8">0.7.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id9">0.7.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id10">0.7.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id11">0.6.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id12">0.5.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id13">0.4.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id14">0.3.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id15">0.2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id16">0.1.0</a></li>
 </ul>
 </li>
 </ul>
@@ -139,6 +157,19 @@
   <ul>
 <li><a class="reference internal" href="#">Django Frontend Skeleton documentation</a><ul>
 <li><a class="reference internal" href="#starring">Starring</a></li>
+<li><a class="reference internal" href="#getting-started">Getting Started</a><ul>
+<li><a class="reference internal" href="#install">Install</a></li>
+<li><a class="reference internal" href="#extend">Extend</a></li>
+<li><a class="reference internal" href="#load">Load</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#template-blocks">Template Blocks</a><ul>
+<li><a class="reference internal" href="#djfrontend-h5bp-css">djfrontend_h5bp_css</a></li>
+<li><a class="reference internal" href="#djfrontend-twbs-css">djfrontend_twbs_css</a></li>
+<li><a class="reference internal" href="#djfrontend-twbs-js">djfrontend_twbs_js</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#further-documentation">Further Documentation</a></li>
 <li><a class="reference internal" href="#contents">Contents</a><ul>
 </ul>
 </li>
@@ -147,8 +178,8 @@
 </ul>
 
   <h4>Next topic</h4>
-  <p class="topless"><a href="getting_started.html"
-                        title="next chapter">Getting Started</a></p>
+  <p class="topless"><a href="license.html"
+                        title="next chapter">License</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/index.txt"
@@ -178,9 +209,9 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="getting_started.html" title="Getting Started"
+          <a href="license.html" title="License"
              >next</a> |</li>
-        <li><a href="#">django-frontend-skeleton 2.0.1 documentation</a> &raquo;</li> 
+        <li><a href="#">django-frontend-skeleton 3.0.0 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
