@@ -1,6 +1,11 @@
 Changelog
 ==============
 
+3.0.0
+------
+* Updated requirement to Django Frontend 1.0.0.
+* Cleaned up documentation to reduce duplication.
+
 2.0.1
 ------
 * Updated requires to install at least django-frontend 0.3.1.
